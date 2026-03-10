@@ -85,6 +85,8 @@ Tested on DJI Air 3S drone under various real-world conditions.
 ## 👥 Team
 
 Hamza Ghitri • Wojciech Seman • Krzysztof Połeć • Jakub Gutt • Mohamed Bendimerad
+<img width="469" height="316" alt="team" src="https://github.com/user-attachments/assets/40d269b0-e2fa-42fd-8d46-b4cfbc2fb678" />
+
 
 ## 📄 License
 

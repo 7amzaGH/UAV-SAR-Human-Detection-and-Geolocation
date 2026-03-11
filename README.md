@@ -1,4 +1,4 @@
-# UAV Human Detection & Geolocation
+<img width="1408" height="768" alt="Gemini_Generated_Image_feuy1gfeuy1gfeuy" src="https://github.com/user-attachments/assets/fb2bdbdd-a101-4c05-8392-0eef096bceda" /><img width="1408" height="768" alt="Gemini_Generated_Image_feuy1gfeuy1gfeuy" src="https://github.com/user-attachments/assets/fb2bdbdd-a101-4c05-8392-0eef096bceda" /># UAV Human Detection & Geolocation
 
 A real-time system for detecting humans from drone footage and calculating their GPS coordinates for search-and-rescue operations.
 
@@ -55,7 +55,7 @@ Once a human is detected with high confidence, the `src/alert.py` module trigger
 
 ---
 
-### 2. 📍 Geolocation Algorithm
+## Geolocation Algorithm
 
 The core contribution of this project. The system translates a 2D bounding box pixel coordinate into a real-world GPS coordinate through three steps:
 
@@ -85,8 +85,8 @@ Using Earth's circumference (40,075 km) with a cosine correction for longitude:
 final_lat = drone_lat + Δlat
 final_lon = drone_lon + Δlon
 ```
+<img width="1408" height="768" alt="Geolocation Algorithm" src="https://github.com/user-attachments/assets/db23cd62-3c77-439c-8532-381890afb774" />
 
-> Full mathematical derivation and assumptions: [`docs/geolocation_math.md`](docs/geolocation_math.md)
 
 **Key inputs required:**
 

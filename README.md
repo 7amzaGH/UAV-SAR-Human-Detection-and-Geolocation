@@ -19,6 +19,40 @@ A real-time system for detecting humans from drone footage and calculating their
 ## 🌟 Project Overview
 This project was developed for the **CVaPR (Computer Vision and Pattern Recognition)** course. It addresses the critical need for automated victim localization in Search-and-Rescue (SAR) missions. By combining **YOLOv8n** for computer vision and a **custom georeferencing algorithm**, the system can pinpoint a person's location on the globe using only a drone's camera and telemetry data.
 
+<p align="center">
+  <img src="assets/demo.gif" width="800" alt="UAV Human Detection Demo">
+  <br>
+  <em>Real-time detection and coordinate estimation using DJI Air 3S footage.</em>
+</p>
+
+---
+
+## 🧠 How It Works
+
+### 1. Detection (YOLOv8n)
+We trained a **YOLOv8 Nano** model on a filtered subset of the **VisDrone dataset**. 
+* **Classes:** Merged "pedestrian" and "people" into a single `human` class.
+* **Input Resolution:** 960x960 pixels.
+* **Platform:** Optimized for edge deployment (e.g., NVIDIA Jetson Nano).
+
+### 2. Geolocation Algorithm
+The system translates 2D image coordinates into 3D GPS coordinates by calculating the ray-intersection between the camera lens and the ground plane.
+
+
+
+**Key variables utilized:**
+* **UAV Telemetry:** Current Latitude, Longitude, and Altitude (m).
+* **Attitude:** Drone Heading ($\psi$) and Gimbal Pitch ($\theta$).
+* **Camera Geometry:** Field of View (FOV) and pixel-to-meter scaling.
+
+### 3. Automated Alerting
+Once a human is detected with high confidence, the `src/alert.py` module triggers an automated email to rescue teams containing:
+* Precise **GPS Link** (Google Maps format).
+* **Timestamp** and Drone Telemetry.
+* **Visual Snapshot** of the detection for verification.
+
+---
+
 ## 🚀 Quick Start
 
 ```bash

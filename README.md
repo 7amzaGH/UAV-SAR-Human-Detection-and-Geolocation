@@ -1,4 +1,4 @@
-<img width="1408" height="768" alt="Gemini_Generated_Image_feuy1gfeuy1gfeuy" src="https://github.com/user-attachments/assets/fb2bdbdd-a101-4c05-8392-0eef096bceda" /><img width="1408" height="768" alt="Gemini_Generated_Image_feuy1gfeuy1gfeuy" src="https://github.com/user-attachments/assets/fb2bdbdd-a101-4c05-8392-0eef096bceda" /># UAV Human Detection & Geolocation
+# UAV Human Detection & Geolocation
 
 A real-time system for detecting humans from drone footage and calculating their GPS coordinates for search-and-rescue operations.
 

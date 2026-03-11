@@ -10,12 +10,14 @@ A real-time system for detecting humans from drone footage and calculating their
   <img src="assets/demo.gif" alt="Detection Demo" width="600"/>
 </p>
 
-## ✨ Features
+**A real-time system to detect humans from UAV footage and calculate their precise GPS coordinates for emergency response.**
 
-- 🎯 Real-time human detection using YOLOv8n
-- 📍 Accurate GPS coordinate calculation from detections
-- 📧 Automated emergency alerts
-- ⚡ Optimized for edge deployment (Jetson Nano)
+[📄 View Full Technical Report (PDF)](docs/Your_Project_Report.pdf) | [📧 Sample Alert Report](assets/email_alert_screenshot.png)
+
+---
+
+## 🌟 Project Overview
+This project was developed for the **CVaPR (Computer Vision and Pattern Recognition)** course. It addresses the critical need for automated victim localization in Search-and-Rescue (SAR) missions. By combining **YOLOv8n** for computer vision and a **custom georeferencing algorithm**, the system can pinpoint a person's location on the globe using only a drone's camera and telemetry data.
 
 ## 🚀 Quick Start
 

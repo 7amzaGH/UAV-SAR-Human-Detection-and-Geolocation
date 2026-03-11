@@ -65,15 +65,50 @@ pip install -r requirements.txt
 python src/main.py --video path/to/video.mp4 --altitude 50
 ```
 
-## 📊 Performance
+## 📊 Model Training & Performance
+
+The core of this system is a custom-trained **YOLOv8n** (Nano) model. This architecture was selected to ensure high-speed inference on edge computing hardware while maintaining the precision required for life-critical search-and-rescue operations.
+
+### 🏗️ Training Phase
+The model was trained using a refined version of the **VisDrone Dataset** to optimize it for aerial perspectives.
+
+* **Dataset Source:** [VisDrone (Kaggle)](https://www.kaggle.com/datasets/vigneshp6/visdrone-dataset)
+* **Dataset Volume:** 6,471 images.
+* **Preprocessing:** The "pedestrian" and "people" classes were merged into a single **"human"** class to increase detection density and simplify the output for rescue teams.
+* **Training Parameters:**
+    * **Epochs:** 50
+    * **Input Resolution:** 960 × 960 pixels.
+    * **Hardware:** Trained on NVIDIA L4 GPU (Google Colab).
+
+
+
+---
+
+### 🧪 Real-World Evaluation
+To bridge the gap between dataset training and practical application, we conducted field tests using the **DJI Air 3S Fly More Combo (DJI RC-N3)**. 
+
+We recorded **4 unique test videos** in outdoor environments, specifically varying the **altitudes (15m–30m)** and **gimbal angles (45°–90°)** to test the model's robustness against perspective distortion.
+<img width="1352" height="316" alt="image" src="https://github.com/user-attachments/assets/dad66574-924c-4442-b9a3-9cd87d232a65" />
+
+
+#### Performance Metrics (at Threshold = 0.4)
+On our self-collected real-world dataset, the model achieved the following results:
 
 | Metric | Value |
-|--------|-------|
-| Precision | 0.717 |
-| Recall | 0.534 |
-| mAP@0.5 | 0.585 |
+| :--- | :--- |
+| **Precision** | **0.987** |
+| **Recall** | **0.904** |
+| **mAP @ 0.5** | **0.887** |
+| **mAP @ 0.5:0.95** | **0.717** |
 
-Trained on VisDrone dataset (6,471 images, 50 epochs, 960×960 resolution).
+
+
+---
+
+### 📈 Key Insights
+* **High Reliability:** The **0.987 Precision** is particularly significant for Search-and-Rescue; it ensures that almost every alert sent to the team is a legitimate human detection, minimizing wasted resources on "false alarms."
+* **Operational Robustness:** The **0.717 mAP@0.5:0.95** indicates that the model maintains high localization accuracy even when the drone is in motion or viewing subjects from steep oblique angles.
+* **Edge Ready:** By using the Nano version of YOLOv8 at a 960px resolution, the system remains responsive enough for real-time coordinate calculation during flight.
 
 ## 📖 Documentation
 

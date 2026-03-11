@@ -102,32 +102,6 @@ On our self-collected real-world dataset, the model achieved the following resul
 | **mAP @ 0.5:0.95** | **0.717** |
 
 
-
----
-
-### 📈 Key Insights
-* **High Reliability:** The **0.987 Precision** is particularly significant for Search-and-Rescue; it ensures that almost every alert sent to the team is a legitimate human detection, minimizing wasted resources on "false alarms."
-* **Operational Robustness:** The **0.717 mAP@0.5:0.95** indicates that the model maintains high localization accuracy even when the drone is in motion or viewing subjects from steep oblique angles.
-* **Edge Ready:** By using the Nano version of YOLOv8 at a 960px resolution, the system remains responsive enough for real-time coordinate calculation during flight.
-
-## 📖 Documentation
-
-- [Installation Guide](docs/INSTALLATION.md)
-- [Usage Examples](docs/USAGE.md)
-- [Geolocation Algorithm](docs/GEOLOCATION.md)
-- [Training Guide](docs/TRAINING.md)
-- [API Reference](docs/API.md)
-
-## 🗺️ How It Works
-
-1. **Detect** humans using YOLOv8n
-2. **Calculate** GPS coordinates from bounding boxes + drone telemetry
-3. **Alert** rescue teams via email with precise location
-
-```
-Drone Camera → YOLOv8 → Geolocation Script → GPS Coords → Alert System
-```
-
 ## 🛠️ Usage
 
 ```python
@@ -147,11 +121,6 @@ gps_coords = calculate_gps(
     heading=45
 )
 ```
-
-## 🎓 Project Context
-
-Developed as part of CVaPR (Computer Vision and Pattern Recognition) course.  
-Tested on DJI Air 3S drone under various real-world conditions.
 
 ## 👥 Team
 

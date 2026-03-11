@@ -55,7 +55,48 @@ Once a human is detected with high confidence, the `src/alert.py` module trigger
 
 ---
 
+### 2. 📍 Geolocation Algorithm
 
+The core contribution of this project. The system translates a 2D bounding box pixel coordinate into a real-world GPS coordinate through three steps:
+
+**Step 1 — Compute image scale (meters/pixel)**
+
+Using the drone's altitude and camera field of view:
+```
+scale_x = (altitude × tan(FOV_H / 2)) / (IMAGE_WIDTH  / 2)
+scale_y = (altitude × tan(FOV_V / 2)) / (IMAGE_HEIGHT / 2)
+```
+
+**Step 2 — Rotate offset by drone heading**
+
+The pixel offset from the image center is rotated to align with true north using compass heading θ:
+```
+x' = cos(θ) × dx  −  sin(θ) × dy
+y' = sin(θ) × dx  +  cos(θ) × dy
+```
+
+**Step 3 — Convert meters → GPS coordinates**
+
+Using Earth's circumference (40,075 km) with a cosine correction for longitude:
+```
+Δlat = (y_meters / 40,075,000) × 360
+Δlon = (x_meters / (40,075,000 × cos(lat_rad))) × 360
+
+final_lat = drone_lat + Δlat
+final_lon = drone_lon + Δlon
+```
+
+> Full mathematical derivation and assumptions: [`docs/geolocation_math.md`](docs/geolocation_math.md)
+
+**Key inputs required:**
+
+| Input | Description |
+|---|---|
+| Bounding box center (x, y) | Pixel coordinates of detected human |
+| Drone latitude / longitude | From onboard GPS |
+| Altitude (meters) | Above ground level |
+| Heading (degrees) | 0° = North, clockwise |
+| Camera FOV | Horizontal and vertical angles |
 
 ## Quick Start
 

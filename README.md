@@ -19,13 +19,38 @@ A real-time system for detecting humans from drone footage and calculating their
 ## Project Overview
 This project was developed for the **CVaPR (Computer Vision and Pattern Recognition)** course. It addresses the critical need for automated missing persons localization in Search-and-Rescue (SAR) missions. By combining **YOLOv8n** for computer vision and a **custom georeferencing algorithm**, the system can pinpoint a person's location on the globe using only a drone's camera and telemetry data.
 
+**The full pipeline:**
+
+```
+Drone Video Feed  +  GPS  +  Altitude  +  Heading
+          │
+          ▼
+┌─────────────────────────┐
+│    YOLOv8n Detection    │  ← Fine-tuned on VisDrone
+│  Output: Bounding Box   │    "pedestrian" + "people" → "human"
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│   Geolocation Module    │  ← Pixel offset → meters (FOV + altitude)
+│  Output: (lat, lon)     │    Heading rotation → GPS delta conversion
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│    Email Alert System   │  ← GPS coords + timestamp + map link
+│  Output: Alert to team  │    Sent instantly via Gmail SMTP
+└─────────────────────────┘
+```
+
+
 <p align="center">
-  <img src="assets/demo.gif" width="800" alt="UAV Human Detection Demo">
+  <img src="https://github.com/user-attachments/assets/38274368-43da-459b-9527-3a11184d3152" width="800" alt="UAV Human Detection Demo">
   <br>
   <em>Real-time detection and coordinate estimation using DJI Air 3S footage.</em>
 </p>
 
-![DJI-Air-3-drone-800x407](https://github.com/user-attachments/assets/38274368-43da-459b-9527-3a11184d3152)
+
 
 ---
 

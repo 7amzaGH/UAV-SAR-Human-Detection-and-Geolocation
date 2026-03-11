@@ -17,7 +17,7 @@ A real-time system for detecting humans from drone footage and calculating their
 ---
 
 ## 🌟 Project Overview
-This project was developed for the **CVaPR (Computer Vision and Pattern Recognition)** course. It addresses the critical need for automated victim localization in Search-and-Rescue (SAR) missions. By combining **YOLOv8n** for computer vision and a **custom georeferencing algorithm**, the system can pinpoint a person's location on the globe using only a drone's camera and telemetry data.
+This project was developed for the **CVaPR (Computer Vision and Pattern Recognition)** course. It addresses the critical need for automated missing persons localization in Search-and-Rescue (SAR) missions. By combining **YOLOv8n** for computer vision and a **custom georeferencing algorithm**, the system can pinpoint a person's location on the globe using only a drone's camera and telemetry data.
 
 <p align="center">
   <img src="assets/demo.gif" width="800" alt="UAV Human Detection Demo">

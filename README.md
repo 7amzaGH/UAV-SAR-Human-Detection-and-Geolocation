@@ -1,4 +1,4 @@
-# 🚁 UAV Human Detection & Geolocation
+# UAV Human Detection & Geolocation
 
 A real-time system for detecting humans from drone footage and calculating their GPS coordinates for search-and-rescue operations.
 
@@ -16,7 +16,7 @@ A real-time system for detecting humans from drone footage and calculating their
 
 ---
 
-## 🌟 Project Overview
+## Project Overview
 This project was developed for the **CVaPR (Computer Vision and Pattern Recognition)** course. It addresses the critical need for automated missing persons localization in Search-and-Rescue (SAR) missions. By combining **YOLOv8n** for computer vision and a **custom georeferencing algorithm**, the system can pinpoint a person's location on the globe using only a drone's camera and telemetry data.
 
 <p align="center">
@@ -29,7 +29,7 @@ This project was developed for the **CVaPR (Computer Vision and Pattern Recognit
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ### 1. Detection (YOLOv8n)
 We trained a **YOLOv8 Nano** model on a filtered subset of the **VisDrone dataset**. 
@@ -55,7 +55,9 @@ Once a human is detected with high confidence, the `src/alert.py` module trigger
 
 ---
 
-## 🚀 Quick Start
+
+
+## Quick Start
 
 ```bash
 # Clone and install
@@ -67,11 +69,11 @@ pip install -r requirements.txt
 python src/main.py --video path/to/video.mp4 --altitude 50
 ```
 
-## 📊 Model Training & Performance
+## Model Training & Performance
 
 The core of this system is a custom-trained **YOLOv8n** (Nano) model. This architecture was selected to ensure high-speed inference on edge computing hardware while maintaining the precision required for life-critical search-and-rescue operations.
 
-### 🏗️ Training Phase
+### Training Phase
 The model was trained using a refined version of the **VisDrone Dataset** to optimize it for aerial perspectives.
 
 * **Dataset Source:** [VisDrone (Kaggle)](https://www.kaggle.com/datasets/vigneshp6/visdrone-dataset)

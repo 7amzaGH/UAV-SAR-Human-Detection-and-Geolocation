@@ -25,6 +25,8 @@ This project was developed for the **CVaPR (Computer Vision and Pattern Recognit
   <em>Real-time detection and coordinate estimation using DJI Air 3S footage.</em>
 </p>
 
+![DJI-Air-3-drone-800x407](https://github.com/user-attachments/assets/38274368-43da-459b-9527-3a11184d3152)
+
 ---
 
 ## 🧠 How It Works

@@ -123,18 +123,6 @@ final_lon = drone_lon + Δlon
 | Heading (degrees) | 0° = North, clockwise |
 | Camera FOV | Horizontal and vertical angles |
 
-## Quick Start
-
-```bash
-# Clone and install
-git clone https://github.com/yourusername/uav-human-localization.git
-cd uav-human-localization
-pip install -r requirements.txt
-
-# Run detection
-python src/main.py --video path/to/video.mp4 --altitude 50
-```
-
 ## Model Training & Performance
 
 The core of this system is a custom-trained **YOLOv8n** (Nano) model. This architecture was selected to ensure high-speed inference on edge computing hardware while maintaining the precision required for life-critical search-and-rescue operations.
@@ -154,7 +142,7 @@ The model was trained using a refined version of the **VisDrone Dataset** to opt
 
 ---
 
-### 🧪 Real-World Evaluation
+### Real-World Evaluation
 To bridge the gap between dataset training and practical application, we conducted field tests using the **DJI Air 3S Fly More Combo (DJI RC-N3)**. 
 
 We recorded **4 unique test videos** in outdoor environments, specifically varying the **altitudes (15m–30m)** and **gimbal angles (45°–90°)** to test the model's robustness against perspective distortion.
@@ -172,27 +160,55 @@ On our self-collected real-world dataset, the model achieved the following resul
 | **mAP @ 0.5:0.95** | **0.717** |
 
 
-## 🛠️ Usage
+## Quick Start
 
-```python
-from src.detector import HumanDetector
-from src.geolocation import calculate_gps
-
-# Initialize detector
-detector = HumanDetector('models/best.pt')
-
-# Process frame
-detections = detector.detect(frame)
-
-# Get GPS coordinates
-gps_coords = calculate_gps(
-    bbox=detections[0],
-    drone_pos=(lat, lon, altitude),
-    heading=45
-)
+### 1. Clone & Install
+```bash
+git clone https://github.com/YOUR_USERNAME/uav-human-localization.git
+cd uav-human-localization
+pip install -r requirements.txt
 ```
 
-## 👥 Team
+### 2. Run on a recorded video (local testing)
+Make sure `Video.MP4` and `Video.SRT` are in the same folder.
+The SRT file contains all flight telemetry : GPS, altitude — per frame automatically.
+```bash
+python src/main_local.py
+```
+
+### 3. Run live on the drone (Jetson Nano)
+GPS, altitude and heading are read in real-time from the flight controller via serial.
+```bash
+python src/main_live.py
+```
+
+---
+
+## Usage in Python
+
+```python
+from src.detect import HumanDetector
+from src.geolocation import get_real_coords
+
+# Initialize detector
+detector = HumanDetector('models/best.pt', conf_threshold=0.4)
+
+# Run detection on a frame
+detections = detector.detect(frame)
+
+# Get GPS coordinates for first detection
+if detections:
+    lat, lon = get_real_coords(
+        bbox_center    = detections[0]["center"],
+        drone_position = (50.2648, 19.0237, 30),  # (lat, lon, altitude_m)
+        drone_heading  = 45,
+        camera_config  = {"fov_h": 84, "fov_v": 54,
+                          "image_width": 1920, "image_height": 1080}
+    )
+    print(f"Human detected at: {lat:.6f}, {lon:.6f}")
+```
+
+## Team
 
 Hamza Ghitri • Wojciech Seman • Krzysztof Połeć • Jakub Gutt • Mohamed Bendimerad
 <img width="469" height="316" alt="team" src="https://github.com/user-attachments/assets/40d269b0-e2fa-42fd-8d46-b4cfbc2fb678" />

@@ -1,0 +1,18 @@
+# Deep learning & detection
+ultralytics>=8.0.0
+
+# Computer vision
+opencv-python>=4.8.0
+
+# Geolocation
+geopy>=2.3.0
+
+# GPS serial reading (main_live.py only)
+pyserial>=3.5
+pynmea2>=1.19.0
+
+# Config parsing
+pyyaml>=6.0
+
+# Core
+numpy>=1.24.0

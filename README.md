@@ -214,11 +214,38 @@ Hamza Ghitri • Wojciech Seman • Krzysztof Połeć • Jakub Gutt • Mohamed
 <img width="469" height="316" alt="team" src="https://github.com/user-attachments/assets/40d269b0-e2fa-42fd-8d46-b4cfbc2fb678" />
 
 
-## 📄 License
+## 📄 Citation
 
-MIT License - see [LICENSE](LICENSE) for details.
+If you use this work in your research, please cite:
 
-## 🙏 Acknowledgments
+```bibtex
+@misc{uav_sar_2025,
+  title   = {UAV Human Detection and Geolocation for Search-and-Rescue Operations},
+  author  = {Ghitri, Hamza and Seman, Wojciech and Połeć, Krzysztof and Gutt, Jakub and Bendimerad, Mohamed},
+  year    = {2025},
+  url     = {https://github.com/YOUR_USERNAME/uav-human-localization},
+  note    = {CVaPR Course Project}
+}
+```
+
+---
+
+## Acknowledgments
+
+- [VisDrone Dataset](https://github.com/VisDrone/VisDrone-Dataset) — Tianjin University
+- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
+
+---
+
+## License
+
+MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+<div align="center">
+  <sub>Built for search-and-rescue applications. Every second counts. 🔴</sub>
+</div>
 
 - [VisDrone Dataset](https://github.com/VisDrone/VisDrone-Dataset)
 - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)

@@ -1,38 +1,45 @@
-# ── Model ─────────────────────────────────────────────────────────────────────
+# =============================================================
+#  UAV Human Detection & Geolocation — Configuration
+#  
+#  main_local.py  uses: model, camera, alert, processing
+#  main_live.py   uses: model, camera, alert, gps
+#
+#  Drone position (lat/lon/altitude/heading) is NOT here —
+#  local: read automatically from the .SRT file next to the video
+#  live:  read in real-time from the flight controller via serial
+# =============================================================
+
+# ── Model ─────────────────────────────────────────────────────
 model:
   weights:              "models/best.pt"
   confidence_threshold: 0.4
-  device:               "cuda"   # use "cpu" if no GPU available
+  device:               "cuda"    # "cpu" if no GPU
 
-# ── Camera (DJI Air 3S) ───────────────────────────────────────────────────────
+# ── Camera (DJI Air 3S) ───────────────────────────────────────
 camera:
-  fov_h:        84     # horizontal field of view in degrees
-  fov_v:        54     # vertical field of view in degrees
+  fov_h:        84      # horizontal field of view in degrees
+  fov_v:        54      # vertical field of view in degrees
   image_width:  1920
   image_height: 1080
 
-# ── Drone Telemetry (main_local.py only — hardcoded per flight) ───────────────
-drone:
-  latitude:  50.264890
-  longitude: 19.023780
-  altitude:  30        # meters above ground
-  heading:   0         # degrees, 0 = North
-
-# ── GPS Serial (main_live.py only — Jetson Nano) ──────────────────────────────
+# ── GPS Serial (main_live.py only) ────────────────────────────
+# Find your port on Jetson with: ls /dev/ttyTHS*
 gps:
-  port:     "/dev/ttyTHS1"   # run: ls /dev/ttyTHS* to find yours
+  port:     "/dev/ttyTHS1"
   baudrate: 9600
 
-# ── Email Alert ───────────────────────────────────────────────────────────────
+# ── Email Alert ───────────────────────────────────────────────
+# Gmail setup: myaccount.google.com/apppasswords
+# NEVER commit real credentials — add config.yaml to .gitignore
 alert:
   recipient_email: "rescue@example.com"
   sender_email:    "your_email@gmail.com"
-  sender_password: "your_app_password"    # Gmail App Password
+  sender_password: "your_app_password"
   smtp_host:       "smtp.gmail.com"
   smtp_port:       465
 
-# ── Processing ────────────────────────────────────────────────────────────────
+# ── Processing (main_local.py only) ───────────────────────────
 processing:
   save_annotated_video: false
   output_directory:     "outputs/"
-  frame_skip:           1          # process every Nth frame (1 = every frame)
+  frame_skip:           1         # 1 = every frame, 2 = every other frame

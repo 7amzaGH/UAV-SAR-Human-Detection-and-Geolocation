@@ -1,18 +1,16 @@
 import cv2
+import sys
+import os
+sys.path.insert(0, os.path.dirname(__file__))
+
 from detect import HumanDetector
 from geolocation import get_real_coords
 from alert import send_alert
+from srt_reader import load_srt, get_frame_telemetry
 
 # ── Settings ──────────────────────────────────────────────────────────────────
 
-VIDEO_PATH   = "test_video.mp4"
-MODEL_PATH   = "models/best.pt"
-
-# Drone telemetry (update these for each flight)
-DRONE_LAT    = 50.264890
-DRONE_LON    = 19.023780
-ALTITUDE     = 30        # meters
-HEADING      = 0         # degrees, 0 = North
+MODEL_PATH = "models/best.pt"
 
 # DJI Air 3S camera settings
 CAMERA = {
@@ -26,6 +24,20 @@ CAMERA = {
 ALERT_EMAIL     = "rescue_team@example.com"
 SENDER_EMAIL    = "your_email@gmail.com"
 SENDER_PASSWORD = "your_app_password"
+
+# ── 1-Settings for extract parameter from SRT of the video ──────────────────────────
+VIDEO_PATH = "DJI_0001.MP4"
+SRT_PATH   = "DJI_0001.SRT"   # same name as video, just .SRT extension
+
+
+# ── 2-Settings for manual parameter input ──────────────────────────
+VIDEO_PATH   = "test_video.mp4"
+
+# Drone telemetry (update these for each flight)
+DRONE_LAT    = 50.264890
+DRONE_LON    = 19.023780
+ALTITUDE     = 30        # meters
+HEADING      = 0         # degrees, 0 = North
 
 # ── Run ───────────────────────────────────────────────────────────────────────
 

@@ -1,0 +1,38 @@
+# ── Model ─────────────────────────────────────────────────────────────────────
+model:
+  weights:              "models/best.pt"
+  confidence_threshold: 0.4
+  device:               "cuda"   # use "cpu" if no GPU available
+
+# ── Camera (DJI Air 3S) ───────────────────────────────────────────────────────
+camera:
+  fov_h:        84     # horizontal field of view in degrees
+  fov_v:        54     # vertical field of view in degrees
+  image_width:  1920
+  image_height: 1080
+
+# ── Drone Telemetry (main_local.py only — hardcoded per flight) ───────────────
+drone:
+  latitude:  50.264890
+  longitude: 19.023780
+  altitude:  30        # meters above ground
+  heading:   0         # degrees, 0 = North
+
+# ── GPS Serial (main_live.py only — Jetson Nano) ──────────────────────────────
+gps:
+  port:     "/dev/ttyTHS1"   # run: ls /dev/ttyTHS* to find yours
+  baudrate: 9600
+
+# ── Email Alert ───────────────────────────────────────────────────────────────
+alert:
+  recipient_email: "rescue@example.com"
+  sender_email:    "your_email@gmail.com"
+  sender_password: "your_app_password"    # Gmail App Password
+  smtp_host:       "smtp.gmail.com"
+  smtp_port:       465
+
+# ── Processing ────────────────────────────────────────────────────────────────
+processing:
+  save_annotated_video: false
+  output_directory:     "outputs/"
+  frame_skip:           1          # process every Nth frame (1 = every frame)

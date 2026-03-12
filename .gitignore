@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Model weights (too large for GitHub — upload via Releases)
+models/*.pt
+
+# Credentials — NEVER commit these
+config.yaml
+
+# Videos and large test files
+*.mp4
+*.MP4
+*.SRT
+
+# Output folders
+outputs/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db

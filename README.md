@@ -62,7 +62,7 @@ All field experiments were conducted using the **DJI Air 3S** drone.
 | Tested angles | 45° oblique and 90° nadir |
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/DJI Air 3S.jpg">
+  <img src="assets/DJI Air 3S.jpg">
   <br>
   <em>Real-time detection and coordinate estimation using DJI Air 3S footage.</em>
 </p>
@@ -84,7 +84,7 @@ The custom evaluation dataset (300 annotated frames, 4 flight conditions) is pub
 - Scenarios: standing, sitting, lying, groups, false positive challenge objects (chairs and bags)
 - License: CC BY 4.0
 
-<img width="1352" height="316" alt="dataset conditions" src="https://github.com/user-attachments/assets/datset_conditions.png" />
+<img width="1352" height="316" alt="dataset conditions" src="assets/datset_conditions.png" />
 
 ---
 

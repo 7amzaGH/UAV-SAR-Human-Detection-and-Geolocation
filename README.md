@@ -47,15 +47,44 @@ UAV Video Feed  +  GPS  +  Altitude  +  Heading
 ```
 
 ---
+## Hardware
 
+All field experiments were conducted using the **DJI Air 3S** drone.
+
+| Specification | Value |
+|---|---|
+| Camera resolution | 4K (3840 × 2160) @ 60 FPS |
+| Camera FOV | 84° diagonal (76° horizontal, 49° vertical) |
+| Onboard GPS | Dual-frequency GPS + GLONASS |
+| Telemetry | DJI SRT file — per-frame GPS, altitude, timestamp |
+| Onboard computer | NVIDIA Jetson Nano (128-core Maxwell GPU, 4 GB RAM) |
+| Tested altitudes | 15m and 30m above ground |
+| Tested angles | 45° oblique and 90° nadir |
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/38274368-43da-459b-9527-3a11184d3152" width="800" alt="UAV Human Detection Demo">
+  <img src="https://github.com/user-attachments/assets/DJI Air 3S.jpg">
   <br>
   <em>Real-time detection and coordinate estimation using DJI Air 3S footage.</em>
 </p>
 
+---
 
+## Dataset
+
+The custom evaluation dataset (300 annotated frames, 4 flight conditions) is publicly available:
+
+**📦 [UAV-SAR-Human-Detection-Dataset on Roboflow](https://universe.roboflow.com/neptunet-bewas/uav-sar-human-detection-dataset)**
+
+<a href="https://universe.roboflow.com/neptunet-bewas/uav-sar-human-detection-dataset">
+    <img src="https://app.roboflow.com/images/download-dataset-badge.svg"/>
+</a>
+
+- 300 frames at 1920×1080 — no augmentation applied
+- 4 conditions: 15m/30m altitude × 45°/90° camera angle
+- Scenarios: standing, sitting, lying, groups, false positive challenge objects (chairs and bags)
+- License: CC BY 4.0
+
+<img width="1352" height="316" alt="dataset conditions" src="https://github.com/user-attachments/assets/datset_conditions.png" />
 
 ---
 

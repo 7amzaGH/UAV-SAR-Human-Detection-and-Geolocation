@@ -258,6 +258,7 @@ If you use this work in your research, please cite:
 ## Acknowledgments
 
 - [VisDrone Dataset](https://github.com/VisDrone/VisDrone-Dataset) — Tianjin University
+- [HERIDAL Dataset](https://zenodo.org/records/5662351) — University of Split
 - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
 
 ---
@@ -269,10 +270,5 @@ MIT License — see [LICENSE](LICENSE) for details.
 ---
 
 <div align="center">
-  <sub>Built for search-and-rescue applications. Every second counts. 🔴</sub>
+  <sub>Built for search-and-rescue applications. Every second counts.</sub>
 </div>
-
-- [VisDrone Dataset](https://github.com/VisDrone/VisDrone-Dataset)
-- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
-
----

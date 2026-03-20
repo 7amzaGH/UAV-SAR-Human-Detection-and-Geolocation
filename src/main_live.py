@@ -1,6 +1,7 @@
 import cv2
-import serial          # reads GPS from drone flight controller via UART
-import pynmea2         # parses NMEA GPS sentences
+import serial
+import pynmea2
+import threading
 from detect import HumanDetector
 from geolocation import get_real_coords
 from alert import send_alert
@@ -9,49 +10,92 @@ from alert import send_alert
 
 MODEL_PATH = "models/best.pt"
 
-# DJI Air 3S camera settings
+# DJI Air 3S camera — FOV derived from 84° diagonal, 16:9 sensor
 CAMERA = {
-    "fov_h":        84,
-    "fov_v":        54,
+    "fov_h":        76,
+    "fov_v":        49,
     "image_width":  1920,
     "image_height": 1080,
 }
 
-# Email alert
+# Email alert — leave empty string to disable
 ALERT_EMAIL     = "rescue_team@example.com"
 SENDER_EMAIL    = "your_email@gmail.com"
-SENDER_PASSWORD = "your_app_password"
+SENDER_PASSWORD = "your_app_password"   # Gmail App Password
 
-# GPS serial port on Jetson Nano (check yours with: ls /dev/ttyTHS*)
+# GPS serial port — run: ls /dev/ttyTHS* to find yours
 GPS_PORT = "/dev/ttyTHS1"
 GPS_BAUD = 9600
 
-# Fixed values — update if your setup reads these from flight controller too
-ALTITUDE = 30   # meters
-HEADING  = 0    # degrees
+# ── Shared telemetry state ────────────────────────────────────────────────────
+# Updated continuously by the GPS thread while detection runs in main thread
 
-# ── GPS Reader ────────────────────────────────────────────────────────────────
+telemetry = {
+    "lat":      None,
+    "lon":      None,
+    "altitude": None,   # from $GPGGA — meters above sea level
+    "heading":  None,   # from $GPHDT or $GPVTG
+    "ready":    False,  # True once all four values are available
+}
 
-def read_gps(ser):
+# ── GPS background thread ─────────────────────────────────────────────────────
+
+def read_telemetry(port, baud):
     """
-    Read one GPS fix from the serial port.
-    Returns (lat, lon) or None if no valid fix yet.
+    Runs in background. Reads NMEA sentences from flight controller
+    and updates shared telemetry dict in real time.
+
+    Sentences used:
+        $GPGGA — lat, lon, altitude
+        $GPHDT — heading (true north)
+        $GPVTG — heading fallback (course over ground)
     """
     try:
-        line = ser.readline().decode("ascii", errors="replace")
-        if line.startswith("$GPRMC") or line.startswith("$GPGGA"):
-            msg = pynmea2.parse(line)
-            return msg.latitude, msg.longitude
-    except Exception:
-        pass
-    return None
+        ser = serial.Serial(port, baud, timeout=1)
+        print(f"[GPS] Connected on {port}")
+    except Exception as e:
+        print(f"[GPS] Could not open {port}: {e}")
+        return
 
-# ── Run ───────────────────────────────────────────────────────────────────────
+    while True:
+        try:
+            line = ser.readline().decode("ascii", errors="replace").strip()
 
-detector   = HumanDetector(MODEL_PATH, conf_threshold=0.4)
-alert_sent = False
+            if line.startswith("$GPGGA"):
+                msg = pynmea2.parse(line)
+                telemetry["lat"]      = msg.latitude
+                telemetry["lon"]      = msg.longitude
+                telemetry["altitude"] = float(msg.altitude)
 
-# Connect to camera — Jetson Nano CSI camera via GStreamer
+            elif line.startswith("$GPHDT"):
+                msg = pynmea2.parse(line)
+                telemetry["heading"] = float(msg.heading)
+
+            elif line.startswith("$GPVTG") and telemetry["heading"] is None:
+                msg = pynmea2.parse(line)
+                if msg.true_track:
+                    telemetry["heading"] = float(msg.true_track)
+
+            if all(v is not None for v in [
+                telemetry["lat"], telemetry["lon"],
+                telemetry["altitude"], telemetry["heading"]
+            ]):
+                telemetry["ready"] = True
+
+        except Exception:
+            pass
+
+# ── Start GPS thread ──────────────────────────────────────────────────────────
+
+gps_thread = threading.Thread(
+    target=read_telemetry,
+    args=(GPS_PORT, GPS_BAUD),
+    daemon=True
+)
+gps_thread.start()
+
+# ── Camera (Jetson Nano CSI via GStreamer) ────────────────────────────────────
+
 gst_pipeline = (
     "nvarguscamerasrc ! "
     "video/x-raw(memory:NVMM), width=1920, height=1080, framerate=30/1 ! "
@@ -60,40 +104,50 @@ gst_pipeline = (
 )
 cap = cv2.VideoCapture(gst_pipeline, cv2.CAP_GSTREAMER)
 
-# Connect to GPS
-gps_serial  = serial.Serial(GPS_PORT, GPS_BAUD, timeout=1)
-drone_lat   = 0.0
-drone_lon   = 0.0
+# ── Run ───────────────────────────────────────────────────────────────────────
 
-print("Starting onboard detection — press Ctrl+C to stop")
+detector   = HumanDetector(MODEL_PATH, conf_threshold=0.6)
+alert_sent = False
+
+print("[INFO] Waiting for GPS fix...")
 
 while cap.isOpened():
     ret, frame = cap.read()
     if not ret:
-        print("Camera read failed")
+        print("[Camera] Read failed")
         break
 
-    # Update GPS position every frame if a fix is available
-    fix = read_gps(gps_serial)
-    if fix:
-        drone_lat, drone_lon = fix
+    if not telemetry["ready"]:
+        print("[GPS] Waiting for fix...", end="\r")
+        continue
+
+    # Snapshot current telemetry
+    lat      = telemetry["lat"]
+    lon      = telemetry["lon"]
+    altitude = telemetry["altitude"]
+    heading  = telemetry["heading"]
 
     detections = detector.detect(frame)
     annotated  = detector.draw(frame.copy(), detections)
 
-    if detections and drone_lat != 0.0:
-        lat, lon = get_real_coords(
-            bbox_center    = detections[0]["center"],
-            drone_position = (drone_lat, drone_lon, ALTITUDE),
-            drone_heading  = HEADING,
+    if detections:
+        # Use detection with highest confidence for geolocation
+        best = max(detections, key=lambda d: d["conf"])
+        person_lat, person_lon = get_real_coords(
+            bbox_center    = best["center"],
+            drone_position = (lat, lon, altitude),
+            drone_heading  = heading,
             camera_config  = CAMERA,
         )
-        print(f"{len(detections)} person(s) at: {lat:.6f}, {lon:.6f}")
+        print(f"{len(detections)} person(s) | "
+              f"Drone: {lat:.4f},{lon:.4f} "
+              f"Alt:{altitude:.1f}m Head:{heading:.1f}° | "
+              f"Person at: {person_lat:.6f},{person_lon:.6f}")
 
         if ALERT_EMAIL and not alert_sent:
             send_alert(
-                lat             = lat,
-                lon             = lon,
+                lat             = person_lat,
+                lon             = person_lon,
                 person_count    = len(detections),
                 recipient_email = ALERT_EMAIL,
                 sender_email    = SENDER_EMAIL,
@@ -103,8 +157,9 @@ while cap.isOpened():
             )
             alert_sent = True
 
-    # No imshow on Jetson — no screen attached, would crash
-    # cv2.imshow("UAV Detection", annotated)  ← commented out on purpose
+    # No imshow on Jetson — no screen during flight
+    # Uncomment only when debugging with monitor plugged in:
+    # cv2.imshow("UAV Detection", annotated)
+    # if cv2.waitKey(1) & 0xFF == ord("q"): break
 
 cap.release()
-gps_serial.close()

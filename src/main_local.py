@@ -11,61 +11,70 @@ from srt_reader import load_srt, get_frame_telemetry
 # ── Settings ──────────────────────────────────────────────────────────────────
 
 MODEL_PATH = "models/best.pt"
+VIDEO_PATH = "DJI_0001.MP4"
+SRT_PATH   = "DJI_0001.SRT"   # same name as video, .SRT extension
+                                # enable Video Caption in DJI camera settings
 
-# DJI Air 3S camera settings
+# DJI Air 3S camera — FOV derived from 84° diagonal, 16:9 sensor
 CAMERA = {
-    "fov_h":        84,
-    "fov_v":        54,
+    "fov_h":        76,
+    "fov_v":        49,
     "image_width":  1920,
     "image_height": 1080,
 }
 
-# Email alert (leave empty strings to disable)
+# Email alert — leave empty string to disable
 ALERT_EMAIL     = "rescue_team@example.com"
 SENDER_EMAIL    = "your_email@gmail.com"
-SENDER_PASSWORD = "your_app_password"
-
-# ── 1-Settings for extract parameter from SRT of the video ──────────────────────────
-VIDEO_PATH = "DJI_0001.MP4"
-SRT_PATH   = "DJI_0001.SRT"   # same name as video, just .SRT extension
-
-
-# ── 2-Settings for manual parameter input ──────────────────────────
-VIDEO_PATH   = "test_video.mp4"
-
-# Drone telemetry (update these for each flight)
-DRONE_LAT    = 50.264890
-DRONE_LON    = 19.023780
-ALTITUDE     = 30        # meters
-HEADING      = 0         # degrees, 0 = North
+SENDER_PASSWORD = "your_app_password"   # Gmail App Password
 
 # ── Run ───────────────────────────────────────────────────────────────────────
 
-detector   = HumanDetector(MODEL_PATH, conf_threshold=0.4)
-drone_pos  = (DRONE_LAT, DRONE_LON, ALTITUDE)
+detector   = HumanDetector(MODEL_PATH, conf_threshold=0.6)
 alert_sent = False
 
-cap = cv2.VideoCapture(VIDEO_PATH)
+# Load all telemetry from SRT file upfront
+# Per-frame: lat, lon, rel_alt (altitude above ground), heading (defaults to 0)
+telemetry = load_srt(SRT_PATH)
+if not telemetry:
+    print(f"[ERROR] No telemetry found in {SRT_PATH}")
+    print("        Make sure Video Caption is ON in DJI camera settings.")
+    sys.exit(1)
+print(f"[SRT] Loaded {len(telemetry)} telemetry frames from {SRT_PATH}")
+
+cap      = cv2.VideoCapture(VIDEO_PATH)
+frame_id = 0
 
 while cap.isOpened():
     ret, frame = cap.read()
     if not ret:
         break
 
+    # Get GPS, altitude, heading for this exact frame
+    telem = get_frame_telemetry(telemetry, frame_id)
+    if telem is None:
+        break
+
+    drone_pos = (telem["lat"], telem["lon"], telem["altitude"])
+    heading   = telem["heading"]
+
     detections = detector.detect(frame)
     annotated  = detector.draw(frame.copy(), detections)
 
     if detections:
-        # Use the first detection's GPS as the alert location
+        # Use detection with highest confidence for geolocation
+        best = max(detections, key=lambda d: d["conf"])
         lat, lon = get_real_coords(
-            bbox_center    = detections[0]["center"],
+            bbox_center    = best["center"],
             drone_position = drone_pos,
-            drone_heading  = HEADING,
+            drone_heading  = heading,
             camera_config  = CAMERA,
         )
-        print(f"{len(detections)} person(s) at: {lat:.6f}, {lon:.6f}")
+        print(f"Frame {frame_id:04d} | "
+              f"Drone: {telem['lat']:.4f},{telem['lon']:.4f} "
+              f"Alt:{telem['altitude']:.1f}m | "
+              f"{len(detections)} person(s) at: {lat:.6f},{lon:.6f}")
 
-        # Send alert once per run
         if ALERT_EMAIL and not alert_sent:
             send_alert(
                 lat             = lat,
@@ -80,9 +89,10 @@ while cap.isOpened():
             alert_sent = True
 
     cv2.imshow("UAV Detection", annotated)
-
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
+
+    frame_id += 1
 
 cap.release()
 cv2.destroyAllWindows()

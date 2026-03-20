@@ -88,130 +88,101 @@ The custom evaluation dataset (300 annotated frames, 4 flight conditions) is pub
 
 ---
 
-## How It Works
-
-### 1. Detection (YOLOv8n)
-We trained a **YOLOv8 Nano** model on a filtered subset of the **VisDrone dataset**. 
-* **Classes:** Merged "pedestrian" and "people" into a single `human` class.
-* **Input Resolution:** 960x960 pixels.
-* **Platform:** Optimized for edge deployment (e.g., NVIDIA Jetson Nano).
-
-### 2. Geolocation Algorithm
-The system translates 2D image coordinates into 3D GPS coordinates by calculating the ray-intersection between the camera lens and the ground plane.
-
-
-
-**Key variables utilized:**
-* **UAV Telemetry:** Current Latitude, Longitude, and Altitude (m).
-* **Attitude:** Drone Heading ($\psi$) and Gimbal Pitch ($\theta$).
-* **Camera Geometry:** Field of View (FOV) and pixel-to-meter scaling.
-
-### 3. Automated Alerting
-Once a human is detected with high confidence, the `src/alert.py` module triggers an automated email to rescue teams containing:
-* Precise **GPS Link** (Google Maps format).
-* **Timestamp** and Drone Telemetry.
-* **Visual Snapshot** of the detection for verification.
-
----
-
 ## Geolocation Algorithm
 
-The core contribution of this project. The system translates a 2D bounding box pixel coordinate into a real-world GPS coordinate through three steps:
+The core contribution. Converts a 2D bounding box pixel coordinate into a real-world GPS coordinate in three steps with no additional sensors required.
 
-**Step 1 — Compute image scale (meters/pixel)**
-
-Using the drone's altitude and camera field of view:
+**Step 1 — Pixel offset to metric displacement**
 ```
 scale_x = (altitude × tan(FOV_H / 2)) / (IMAGE_WIDTH  / 2)
 scale_y = (altitude × tan(FOV_V / 2)) / (IMAGE_HEIGHT / 2)
+d_x = (cx - W/2) × scale_x
+d_y = (cy - H/2) × scale_y
 ```
 
-**Step 2 — Rotate offset by drone heading**
-
-The pixel offset from the image center is rotated to align with true north using compass heading θ:
+**Step 2 — Rotate by drone heading**
 ```
-x' = cos(θ) × dx  −  sin(θ) × dy
-y' = sin(θ) × dx  +  cos(θ) × dy
+d_x' = cos(ψ) × d_x  −  sin(ψ) × d_y
+d_y' = sin(ψ) × d_x  +  cos(ψ) × d_y
 ```
 
-**Step 3 — Convert meters → GPS coordinates**
-
-Using Earth's circumference (40,075 km) with a cosine correction for longitude:
+**Step 3 — Convert meters to GPS**
 ```
-Δlat = (y_meters / 40,075,000) × 360
-Δlon = (x_meters / (40,075,000 × cos(lat_rad))) × 360
-
-final_lat = drone_lat + Δlat
-final_lon = drone_lon + Δlon
+Δlat = (d_y' / 40,075,000) × 360
+Δlon = (d_x' / (40,075,000 × cos(lat_rad))) × 360
 ```
-<img width="1408" height="768" alt="Geolocation Algorithm" src="https://github.com/user-attachments/assets/db23cd62-3c77-439c-8532-381890afb774" />
 
-
-**Key inputs required:**
-
-| Input | Description |
-|---|---|
-| Bounding box center (x, y) | Pixel coordinates of detected human |
-| Drone latitude / longitude | From onboard GPS |
-| Altitude (meters) | Above ground level |
-| Heading (degrees) | 0° = North, clockwise |
-| Camera FOV | Horizontal and vertical angles |
-
-## Model Training & Performance
-
-The core of this system is a custom-trained **YOLOv8n** (Nano) model. This architecture was selected to ensure high-speed inference on edge computing hardware while maintaining the precision required for life-critical search-and-rescue operations.
-
-### Training Phase
-The model was trained using a refined version of the **VisDrone Dataset** to optimize it for aerial perspectives.
-
-* **Dataset Source:** [VisDrone (Kaggle)](https://www.kaggle.com/datasets/vigneshp6/visdrone-dataset)
-* **Dataset Volume:** 6,471 images.
-* **Preprocessing:** The "pedestrian" and "people" classes were merged into a single **"human"** class to increase detection density and simplify the output for rescue teams.
-* **Training Parameters:**
-    * **Epochs:** 50
-    * **Input Resolution:** 960 × 960 pixels.
-    * **Hardware:** Trained on NVIDIA L4 GPU (Google Colab).
-
-
+No IMU · No depth sensor · No stereo camera — only the drone's standard GPS.
 
 ---
 
-### Real-World Evaluation
-To bridge the gap between dataset training and practical application, we conducted field tests using the **DJI Air 3S Fly More Combo (DJI RC-N3)**. 
+## Results
 
-We recorded **4 unique test videos** in outdoor environments, specifically varying the **altitudes (15m–30m)** and **gimbal angles (45°–90°)** to test the model's robustness against perspective distortion.
-<img width="1352" height="316" alt="image" src="https://github.com/user-attachments/assets/dad66574-924c-4442-b9a3-9cd87d232a65" />
+### Detection Performance (Custom SAR Evaluation Dataset, threshold = 0.6)
 
+| Model | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
+|---|---|---|---|---|
+| VisDrone only | 0.580 | 0.567 | 0.597 | 0.367 |
+| HERIDAL only | 0.845 | 0.911 | 0.941 | 0.757 |
+| **VisDrone → HERIDAL (ours)** | **0.921** | **0.926** | **0.965** | **0.776** |
 
-#### Performance Metrics (at Threshold = 0.4)
-On our self-collected real-world dataset, the model achieved the following results:
+### Geolocation Accuracy (60 measurements, 4 conditions)
 
-| Metric | Value |
-| :--- | :--- |
-| **Precision** | **0.987** |
-| **Recall** | **0.904** |
-| **mAP @ 0.5** | **0.887** |
-| **mAP @ 0.5:0.95** | **0.717** |
+| Condition | Mean Error (m) | Std Dev (m) | Max Error (m) |
+|---|---|---|---|
+| 15m / 90° | 0.61 | 0.18 | 0.94 |
+| 15m / 45° | 0.89 | 0.24 | 1.32 |
+| 30m / 90° | 1.21 | 0.31 | 1.78 |
+| 30m / 45° | 1.64 | 0.42 | 1.97 |
+| **Overall** | **1.09** | **0.41** | **1.97** |
 
+### Inference Speed
+
+| Hardware | Role | FPS |
+|---|---|---|
+| NVIDIA T4 GPU (Google Colab) | Training and evaluation | ~79 |
+| NVIDIA Jetson Nano (onboard) | Target deployment | ~5.7 |
+
+---
+
+## Email Alert
+
+Upon detection the system automatically sends an alert to the rescue team:
+
+<p align="center">
+  <img src="assets/email.png" alt="Email Alert Example" width="700"/>
+  <br>
+  <em>Automated email alert with GPS coordinates, Google Maps link, and detection snapshots.</em>
+</p>
+
+---
 
 ## Quick Start
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/YOUR_USERNAME/uav-human-localization.git
-cd uav-human-localization
+git clone https://github.com/7amzaGH/UAV-SAR-Human-Detection-and-Geolocation.git
+cd UAV-SAR-Human-Detection-and-Geolocation
 pip install -r requirements.txt
 ```
 
-### 2. Run on a recorded video (local testing)
-Make sure `Video.MP4` and `Video.SRT` are in the same folder.
-The SRT file contains all flight telemetry : GPS, altitude — per frame automatically.
+### 2. Download model weights
+Place `best.pt` in the `models/` folder.
+Download: [GitHub Releases](#) · [HuggingFace](#)
+
+### 3. Configure
+```bash
+cp config.example.yaml config.yaml
+# Edit config.yaml — add your email credentials
+```
+
+### 4. Run on recorded video
+Make sure your `.MP4` and `.SRT` files are in the same folder.
 ```bash
 python src/main_local.py
 ```
 
-### 3. Run live on the drone (Jetson Nano)
-GPS, altitude and heading are read in real-time from the flight controller via serial.
+### 5. Run live on Jetson Nano
 ```bash
 python src/main_live.py
 ```
@@ -224,24 +195,44 @@ python src/main_live.py
 from src.detect import HumanDetector
 from src.geolocation import get_real_coords
 
-# Initialize detector
-detector = HumanDetector('models/best.pt', conf_threshold=0.4)
-
-# Run detection on a frame
+detector = HumanDetector('models/best.pt', conf_threshold=0.6)
 detections = detector.detect(frame)
 
-# Get GPS coordinates for first detection
 if detections:
     lat, lon = get_real_coords(
         bbox_center    = detections[0]["center"],
         drone_position = (50.2648, 19.0237, 30),  # (lat, lon, altitude_m)
-        drone_heading  = 45,
-        camera_config  = {"fov_h": 84, "fov_v": 54,
+        drone_heading  = 129,
+        camera_config  = {"fov_h": 76, "fov_v": 49,
                           "image_width": 1920, "image_height": 1080}
     )
-    print(f"Human detected at: {lat:.6f}, {lon:.6f}")
+    print(f"Person detected at: {lat:.6f}, {lon:.6f}")
 ```
 
+---
+
+## Repository Structure
+
+```
+UAV-SAR-Human-Detection-and-Geolocation/
+├── src/
+│   ├── main_local.py       ← Run on recorded DJI video + SRT file
+│   ├── main_live.py        ← Run live on Jetson Nano
+│   ├── detect.py           ← YOLOv8n inference wrapper
+│   ├── geolocation.py      ← Pixel → GPS algorithm
+│   ├── srt_reader.py       ← DJI .SRT telemetry parser
+│   └── alert.py            ← Email alert with GPS + snapshots
+├── models/
+│   └── README.md           ← Download link for best.pt
+├── assets/
+│   ├── demo.gif
+│   └── email_alert.png
+├── config.example.yaml     ← Template — copy to config.yaml
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+---
 ## Team
 
 Hamza Ghitri • Wojciech Seman • Krzysztof Połeć • Jakub Gutt • Mohamed Bendimerad

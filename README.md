@@ -1,47 +1,52 @@
-# UAV Human Detection & Geolocation
+# UAV Human Detection & Geolocation for Search-and-Rescue
 
-A real-time system for detecting humans from drone footage and calculating their GPS coordinates for search-and-rescue operations.
+Real-time aerial human detection, GPS localization, and automated rescue team alerting using a UAV-mounted YOLOv8n model.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00FFFF.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00FFFF.svg)](https://ultralytics.com)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Dataset](https://img.shields.io/badge/Dataset-Roboflow-purple.svg)](https://universe.roboflow.com/neptunet-bewas/uav-sar-human-detection-dataset)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red.svg)](#)
 
 <p align="center">
-  <img src="assets/demo.gif" alt="Detection Demo" width="600"/>
+  <img src="assets/demo.gif" alt="Detection Demo" width="700"/>
 </p>
 
-**A real-time system to detect humans from UAV footage and calculate their precise GPS coordinates for emergency response.**
+> Real-time human detection and GPS coordinate estimation from UAV footage for emergency SAR response.
 
-[📄 View Full Technical Report (PDF)](docs/Your_Project_Report.pdf) | [📧 Sample Alert Report](assets/email_alert_screenshot.png)
+> 📄 [View Full Technical Research (arXiv)](#) &nbsp;|&nbsp; 📦 [Dataset (Roboflow)](https://universe.roboflow.com/neptunet-bewas/uav-sar-human-detection-dataset) &nbsp;|&nbsp; 🚀 [Full code (GitHub)](https://github.com/7amzaGH/UAV-SAR-Human-Detection-and-Geolocation)
 
 ---
 
-## Project Overview
-This project was developed for the **CVaPR (Computer Vision and Pattern Recognition)** course. It addresses the critical need for automated missing persons localization in Search-and-Rescue (SAR) missions. By combining **YOLOv8n** for computer vision and a **custom georeferencing algorithm**, the system can pinpoint a person's location on the globe using only a drone's camera and telemetry data.
+## Overview
 
-**The full pipeline:**
+This system addresses the critical need for automated victim localization in Search-and-Rescue (SAR) missions. It combines a two-stage fine-tuned YOLOv8n model with a geometric geolocation algorithm to convert bounding box pixel coordinates into real-world GPS coordinates using only the drone's standard onboard sensors — no additional hardware required.
+
+**Full pipeline:**
 
 ```
-Drone Video Feed  +  GPS  +  Altitude  +  Heading
-          │
-          ▼
-┌─────────────────────────┐
-│    YOLOv8n Detection    │  ← Fine-tuned on VisDrone
-│  Output: Bounding Box   │    "pedestrian" + "people" → "human"
-└────────────┬────────────┘
+UAV Video Feed  +  GPS  +  Altitude  +  Heading
+        │
+        ▼
+┌──────────────────────────┐
+│   YOLOv8n Detection      │  ← Two-stage: VisDrone → HERIDAL fine-tuning
+│   Output: Bounding Box   │    Confidence threshold: 0.6
+└────────────┬─────────────┘
              │
              ▼
-┌─────────────────────────┐
-│   Geolocation Module    │  ← Pixel offset → meters (FOV + altitude)
-│  Output: (lat, lon)     │    Heading rotation → GPS delta conversion
-└────────────┬────────────┘
+┌──────────────────────────┐
+│   Geolocation Module     │  ← Pixel offset → meters (FOV + altitude)
+│   Output: (lat, lon)     │    Heading rotation → GPS delta conversion
+└────────────┬─────────────┘
              │
              ▼
-┌─────────────────────────┐
-│    Email Alert System   │  ← GPS coords + timestamp + map link
-│  Output: Alert to team  │    Sent instantly via Gmail SMTP
-└─────────────────────────┘
+┌──────────────────────────┐
+│   Email Alert System     │  ← GPS coords + Google Maps + snapshots
+│   Output: Alert to team  │    Sent via Gmail SMTP over SSL
+└──────────────────────────┘
 ```
+
+---
 
 
 <p align="center">

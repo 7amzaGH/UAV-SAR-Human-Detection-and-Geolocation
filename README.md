@@ -71,9 +71,7 @@ All field experiments were conducted using the **DJI Air 3S** drone.
 
 ## Dataset
 
-The custom evaluation dataset (300 annotated frames, 4 flight conditions) is publicly available:
-
-**📦 [UAV-SAR-Human-Detection-Dataset on Roboflow](https://universe.roboflow.com/neptunet-bewas/uav-sar-human-detection-dataset)**
+The custom evaluation dataset (300 annotated frames, 4 flight conditions) is publicly available in roboflow under the name "**[UAV-SAR-Human-Detection-Dataset on Roboflow](https://universe.roboflow.com/neptunet-bewas/uav-sar-human-detection-dataset)**"
 
 <a href="https://universe.roboflow.com/neptunet-bewas/uav-sar-human-detection-dataset">
     <img src="https://app.roboflow.com/images/download-dataset-badge.svg"/>

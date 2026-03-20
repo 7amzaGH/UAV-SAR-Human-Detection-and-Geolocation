@@ -172,7 +172,7 @@ Download: [GitHub Releases](#) · [HuggingFace](#)
 
 ### 3. Configure
 ```bash
-cp config.example.yaml config.yaml
+cp config.yaml config.yaml
 # Edit config.yaml — add your email credentials
 ```
 
@@ -224,10 +224,8 @@ UAV-SAR-Human-Detection-and-Geolocation/
 │   └── alert.py            ← Email alert with GPS + snapshots
 ├── models/
 │   └── README.md           ← Download link for best.pt
-├── assets/
-│   ├── demo.gif
-│   └── email_alert.png
-├── config.example.yaml     ← Template — copy to config.yaml
+├── assets/                 ← Project Figures
+├── config.yaml             ← Template — copy to config.yaml
 ├── requirements.txt
 ├── .gitignore
 └── README.md

@@ -231,7 +231,7 @@ UAV-SAR-Human-Detection-and-Geolocation/
 ---
 ## Team
 
-Hamza Ghitri • Wojciech Seman • Krzysztof Połeć • Jakub Gutt • Mohamed Bendimerad
+Hamza Ghitri • Jakub Gutt • Wojciech Seman • Krzysztof Połeć  • Mohamed Bendimerad
 
 <p align="center">
   <img src="assets/team4.jpg" alt="team" width="700"/>

@@ -246,8 +246,7 @@ If you use this work in your research, please cite:
   title   = {UAV Human Detection and Geolocation for Search-and-Rescue Operations},
   author  = {Ghitri, Hamza and Seman, Wojciech and Połeć, Krzysztof and Gutt, Jakub and Bendimerad, Mohamed},
   year    = {2025},
-  url     = {https://github.com/YOUR_USERNAME/uav-human-localization},
-  note    = {CVaPR Course Project}
+  url     = {https://github.com/7amzaGH/UAV-SAR-Human-Detection-and-Geolocation}
 }
 ```
 

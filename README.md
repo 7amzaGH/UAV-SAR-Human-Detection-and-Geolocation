@@ -1,6 +1,6 @@
-# UAV Human Detection & Geolocation for Search-and-Rescue
+# UAV-Based Human Detection and Geolocation for Search and Rescue
 
-Real-time aerial human detection, GPS localization, and automated rescue team alerting using a UAV-mounted YOLOv8n model.
+Real-time UAV system for detecting and geolocating humans in search-and-rescue scenarios using lightweight deep learning and onboard telemetry.
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00FFFF.svg)](https://ultralytics.com)
@@ -8,6 +8,7 @@ Real-time aerial human detection, GPS localization, and automated rescue team al
 [![Dataset](https://img.shields.io/badge/Dataset-Roboflow-purple.svg)](https://universe.roboflow.com/neptunet-bewas/uav-sar-human-detection-dataset)
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red.svg)](#)
 
+## YOLOv8n detection Demo
 <p align="center">
   <img src="assets/demo.gif" alt="Detection Demo" width="700"/>
 </p>
@@ -20,34 +21,16 @@ Real-time aerial human detection, GPS localization, and automated rescue team al
 
 ## Overview
 
-This system addresses the critical need for automated victim localization in Search-and-Rescue (SAR) missions. It combines a two-stage fine-tuned YOLOv8n model with a geometric geolocation algorithm to convert bounding box pixel coordinates into real-world GPS coordinates using only the drone's standard onboard sensors — no additional hardware required.
+This system addresses the critical need for automated victim localization in SAR missions.  
+It combines a two-stage fine-tuned YOLOv8n model with a geometric geolocation algorithm to convert bounding box coordinates into real-world GPS positions using only onboard sensors.
 
 **Full pipeline:**
 
-```
-UAV Video Feed  +  GPS  +  Altitude  +  Heading
-        │
-        ▼
-┌──────────────────────────┐
-│   YOLOv8n Detection      │  ← Two-stage: VisDrone → HERIDAL fine-tuning
-│   Output: Bounding Box   │    Confidence threshold: 0.6
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│   Geolocation Module     │  ← Pixel offset → meters (FOV + altitude)
-│   Output: (lat, lon)     │    Heading rotation → GPS delta conversion
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│   Email Alert System     │  ← GPS coords + Google Maps + snapshots
-│   Output: Alert to team  │    Sent via Gmail SMTP over SSL
-└──────────────────────────┘
-```
-
+<p align="center">
+  <img src="assets/arch4.jpg" width="800"/>
+</p>
 ---
-## Hardware
+## Hardware Setup
 
 All field experiments were conducted using the **DJI Air 3S** drone.
 
@@ -83,12 +66,12 @@ The custom evaluation dataset (300 annotated frames, 4 flight conditions) is pub
 - License: CC BY 4.0
 
 <img width="1352" height="316" alt="dataset conditions" src="assets/datset_conditions.png" />
-
+> Note: This dataset is used for evaluation purposes only and is not used for model training.
 ---
 
 ## Geolocation Algorithm
 
-The core contribution. Converts a 2D bounding box pixel coordinate into a real-world GPS coordinate in three steps with no additional sensors required.
+A key component of the system. Converts a 2D bounding box pixel coordinate into a real-world GPS coordinate in three steps with no additional sensors required.
 
 **Step 1 — Pixel offset to metric displacement**
 ```
@@ -116,7 +99,7 @@ No IMU · No depth sensor · No stereo camera — only the drone's standard GPS.
 
 ## Results
 
-### Detection Performance (Custom SAR Evaluation Dataset, threshold = 0.6)
+### Detection Performance (Custom SAR Evaluation Dataset, threshold = 0.5)
 
 | Model | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
 |---|---|---|---|---|
@@ -124,6 +107,7 @@ No IMU · No depth sensor · No stereo camera — only the drone's standard GPS.
 | HERIDAL only | 0.845 | 0.911 | 0.941 | 0.757 |
 | **VisDrone → HERIDAL (ours)** | **0.921** | **0.926** | **0.965** | **0.776** |
 
+> The two-stage VisDrone → HERIDAL model consistently outperforms single-dataset training, demonstrating improved generalization to SAR-specific conditions.
 ### Geolocation Accuracy (60 measurements, 4 conditions)
 
 | Condition | Mean Error (m) | Std Dev (m) | Max Error (m) |
@@ -136,10 +120,12 @@ No IMU · No depth sensor · No stereo camera — only the drone's standard GPS.
 
 ### Inference Speed
 
-| Hardware | Role | FPS |
-|---|---|---|
-| NVIDIA T4 GPU (Google Colab) | Training and evaluation | ~79 |
-| NVIDIA Jetson Nano (onboard) | Target deployment | ~5.7 |
+### Inference Performance
+
+| Platform | Execution Type | Input Resolution | Latency (ms) | FPS | Notes |
+|---|---|---|---|---|---|
+| NVIDIA T4 GPU | PyTorch (FP32) | 960×960 | ~12.6 | ~79 | Training / baseline reference |
+| Qualcomm RB3 Gen 2 (QCS6490) | NPU (W8A16) | 960×960 | **37.3 (median)** | **~26.8** | Optimized edge deployment |
 
 ---
 
@@ -170,7 +156,7 @@ Download: [GitHub Releases](#) · [HuggingFace](#)
 
 ### 3. Configure
 ```bash
-cp config.yaml config.yaml
+cp config.yaml.example config.yaml
 # Edit config.yaml — add your email credentials
 ```
 
@@ -231,7 +217,7 @@ UAV-SAR-Human-Detection-and-Geolocation/
 ---
 ## Team
 
-Hamza Ghitri • Jakub Gutt • Wojciech Seman • Krzysztof Połeć  • Mohamed Bendimerad
+**Hamza Ghitri** • Jakub Gutt • Wojciech Seman • Krzysztof Połeć  • Mohamed Bendimerad
 
 <p align="center">
   <img src="assets/team4.jpg" alt="team" width="700"/>
@@ -242,11 +228,11 @@ Hamza Ghitri • Jakub Gutt • Wojciech Seman • Krzysztof Połeć  • Mohame
 If you use this work in your research, please cite:
 
 ```bibtex
-@misc{uav_sar_2025,
-  title   = {UAV Human Detection and Geolocation for Search-and-Rescue Operations},
-  author  = {Ghitri, Hamza and Seman, Wojciech and Połeć, Krzysztof and Gutt, Jakub and Bendimerad, Mohamed},
-  year    = {2025},
-  url     = {https://github.com/7amzaGH/UAV-SAR-Human-Detection-and-Geolocation}
+@article{ghitri2025uavsar,
+  title={UAV-Based Human Detection and Geolocation for Search and Rescue},
+  author={Ghitri, Hamza and others},
+  year={2026},
+  note={arXiv preprint}
 }
 ```
 

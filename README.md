@@ -28,7 +28,6 @@ This system addresses the critical need for automated victim localization in SAR
 <p align="center">
   <img src="assets/arch4.jpg" width="800"/>
 </p>
----
 
 ## Hardware Setup
 
@@ -39,7 +38,7 @@ All field experiments were conducted using the **DJI Air 3S** drone.
 | Camera resolution | 4K (3840 × 2160) @ 60 FPS |
 | Camera FOV | 84° diagonal (76° horizontal, 49° vertical) |
 | Onboard GPS | Dual-frequency GPS + GLONASS |
-| Telemetry | DJI SRT file — per-frame GPS, altitude, timestamp |
+| Telemetry | DJI SRT file - per-frame GPS, altitude, timestamp |
 | Onboard computer | NVIDIA Jetson Nano (128-core Maxwell GPU, 4 GB RAM) |
 | Tested altitudes | 15m and 30m above ground |
 | Tested angles | 45° oblique and 90° nadir |
@@ -66,8 +65,8 @@ The custom evaluation dataset (300 annotated frames, 4 flight conditions) is pub
 - License: CC BY 4.0
 
 <img width="1352" height="316" alt="dataset conditions" src="assets/datset_conditions.png" />
+
 > Note: This dataset is used for evaluation purposes only and is not used for model training.
----
 
 ## Geolocation Algorithm
 
@@ -93,11 +92,9 @@ d_y' = sin(ψ) × d_x  +  cos(ψ) × d_y
 Δlon = (d_x' / (40,075,000 × cos(lat_rad))) × 360
 ```
 
-No IMU · No depth sensor · No stereo camera — only the drone's standard GPS.
+No IMU · No depth sensor · No stereo camera, only the drone's standard GPS.
 
 ---
-
-## Results
 
 ### Detection Performance (Custom SAR Evaluation Dataset, threshold = 0.5)
 
@@ -118,7 +115,6 @@ No IMU · No depth sensor · No stereo camera — only the drone's standard GPS.
 | 30m / 45° | 1.64 | 0.42 | 1.97 |
 | **Overall** | **1.09** | **0.41** | **1.97** |
 
-### Inference Speed
 
 ### Inference Performance
 

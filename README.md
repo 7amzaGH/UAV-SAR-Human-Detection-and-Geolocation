@@ -21,8 +21,7 @@ Real-time UAV system for detecting and geolocating humans in search-and-rescue s
 
 ## Overview
 
-This system addresses the critical need for automated victim localization in SAR missions.  
-It combines a two-stage fine-tuned YOLOv8n model with a geometric geolocation algorithm to convert bounding box coordinates into real-world GPS positions using only onboard sensors.
+This system addresses the critical need for automated victim localization in SAR missions. It combines a two-stage fine-tuned YOLOv8n model with a geometric geolocation algorithm to convert bounding box coordinates into real-world GPS positions using only onboard sensors.
 
 **Full pipeline:**
 
@@ -30,6 +29,7 @@ It combines a two-stage fine-tuned YOLOv8n model with a geometric geolocation al
   <img src="assets/arch4.jpg" width="800"/>
 </p>
 ---
+
 ## Hardware Setup
 
 All field experiments were conducted using the **DJI Air 3S** drone.

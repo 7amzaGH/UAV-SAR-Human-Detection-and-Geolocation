@@ -3,52 +3,54 @@ import math
 # Earth circumference in meters
 EARTH_CIRCUMFERENCE = 40_075_000
 
-def get_scale_x(altitude, fov_h, image_width):
-    return (altitude * math.tan(math.radians(fov_h / 2))) / (image_width / 2)
-
-def get_scale_y(altitude, fov_v, image_height):
-    return (altitude * math.tan(math.radians(fov_v / 2))) / (image_height / 2)
-
-def rotate(dist_x, dist_y, heading):
-    theta = math.radians(heading)
-    x_rotated = math.cos(theta) * dist_x - math.sin(theta) * dist_y
-    y_rotated = math.sin(theta) * dist_x + math.cos(theta) * dist_y
-    return x_rotated, y_rotated
-
-def get_real_coords(bbox_center, drone_position, drone_heading, camera_config):
+def get_real_coords(bbox_center, drone_position, drone_heading, gimbal_pitch, camera_config):
     """
     Convert a bounding box pixel position to GPS coordinates.
     
-    bbox_center:    (cx, cy) pixel coordinates of the detected person
+    bbox_center:    (cx, cy) pixel coordinates of the detection
     drone_position: (latitude, longitude, altitude) of the drone
     drone_heading:  compass heading in degrees (0 = North)
+    gimbal_pitch:   angle from horizon (e.g., -90 for Nadir, -45 for oblique)
+                    Note: Adjust mapping based on your specific gimbal data.
     camera_config:  dict with fov_h, fov_v, image_width, image_height
     """
-    drone_lat, drone_lon, altitude = drone_position
+    drone_lat, drone_lon, alt_m = drone_position
     cx, cy = bbox_center
 
-    image_width  = camera_config["image_width"]
-    image_height = camera_config["image_height"]
+    W = camera_config["image_width"]
+    H = camera_config["image_height"]
 
-    # Pixel offset from the center of the image
-    offset_x = cx - image_width  / 2
-    offset_y = cy - image_height / 2
+    # 1. Calculate Ground Sample Distance (GSD) per pixel
+    gsd_x = (2 * alt_m * math.tan(math.radians(camera_config["fov_h"]) / 2)) / W
+    gsd_y = (2 * alt_m * math.tan(math.radians(camera_config["fov_v"]) / 2)) / H
 
-    # Convert pixel offset to meters
-    scale_x = get_scale_x(altitude, camera_config["fov_h"], image_width)
-    scale_y = get_scale_y(altitude, camera_config["fov_v"], image_height)
+    # 2. Pixel offsets from image center
+    # delta_y is negated to flip image coordinates to Cartesian (Up is Positive)
+    delta_x = cx - W / 2
+    delta_y = -(cy - H / 2)
 
-    dist_x = offset_x * scale_x
-    dist_y = offset_y * scale_y
+    # 3. Convert pixel offsets to real-world meters in the image frame
+    dx_m = delta_x * gsd_x
+    dy_m = delta_y * gsd_y
 
-    # Rotate to align with North based on drone heading
-    dist_x, dist_y = rotate(dist_x, dist_y, drone_heading)
+    # 4. Apply Gimbal Pitch Correction
+    # If gimbal_pitch follows DJI standard (0=horizon, -90=down), 
+    # we convert it to an offset forward from the drone.
+    # We use -pitch because our tangent logic expects a positive angle from Nadir.
+    # Map your 90->0 and 45->-45 logic here if needed.
+    if gimbal_pitch != 0:
+        dy_m += alt_m * math.tan(math.radians(-gimbal_pitch))
 
-    # Convert meters to latitude/longitude degrees
-    delta_lat = (dist_y / EARTH_CIRCUMFERENCE) * 360
-    delta_lon = (dist_x / (EARTH_CIRCUMFERENCE * math.cos(math.radians(drone_lat)))) * 360
+    # 5. Rotate by heading to align with North/East (World Frame)
+    heading_rad = math.radians(drone_heading)
+    north_m = dx_m * (-math.sin(heading_rad)) + dy_m * math.cos(heading_rad)
+    east_m  = dx_m * math.cos(heading_rad) + dy_m * math.sin(heading_rad)
 
-    real_lat = drone_lat + delta_lat
-    real_lon = drone_lon + delta_lon
+    # 6. Convert North/East meters to Latitude/Longitude degrees
+    meters_per_deg_lat = EARTH_CIRCUMFERENCE / 360
+    meters_per_deg_lon = meters_per_deg_lat * math.cos(math.radians(drone_lat))
+
+    real_lat = drone_lat + (north_m / meters_per_deg_lat)
+    real_lon = drone_lon + (east_m / meters_per_deg_lon)
 
     return real_lat, real_lon

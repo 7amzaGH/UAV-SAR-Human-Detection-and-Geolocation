@@ -54,3 +54,15 @@ def get_real_coords(bbox_center, drone_position, drone_heading, gimbal_pitch, ca
     real_lon = drone_lon + (east_m / meters_per_deg_lon)
 
     return real_lat, real_lon
+
+def haversine(lat1, lon1, lat2, lon2):
+    R = EARTH_CIRCUMFERENCE / (2 * math.pi)
+    dphi = math.radians(lat2 - lat1)
+    dlam = math.radians(lon2 - lon1)
+    a = (math.sin(dphi / 2) ** 2
+         + math.cos(math.radians(lat1))
+         * math.cos(math.radians(lat2))
+         * math.sin(dlam / 2) ** 2)
+    return 2 * R * math.asin(math.sqrt(a))
+
+print("Geolocation functions defined.")

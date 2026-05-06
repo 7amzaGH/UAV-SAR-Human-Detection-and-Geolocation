@@ -1,0 +1,18 @@
+alert:
+  enabled: false
+  recipient: "your_email@gmail.com"
+  sender: "demo_bot@gmail.com"
+  password: "your_app_password"
+camera:
+  fov_h: 76
+  fov_v: 49
+  fps: 30
+  image_height: 1080
+  image_width: 1920
+conf_threshold: 0.7
+gimbal_pitch: 0
+paths:
+  model: /content/best.pt
+  output_csv: /content/detections3.csv
+  srt: /content/45d15m_Flight_Data.srt
+  video: /content/resized_drone_clip3.mp4

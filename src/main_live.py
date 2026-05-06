@@ -1,165 +1,155 @@
+"""
+main_live.py
+------------
+Live UAV-SAR pipeline for real-time onboard deployment.
+Optimized for Qualcomm RB3 Gen 2, Jetson, and other edge devices via ONNX Runtime.
+
+Usage:
+    python main_live.py --config config.yaml
+
+Inputs:
+    - Live Camera feed (USB/CSI/RTSP)
+    - Real-time NMEA Telemetry via Serial (Flight Controller)
+    - Optimized ONNX Model Weights
+
+Outputs:
+    - Real-time console telemetry logs
+    - Automated email alerts with geolocation and annotated frames
+    - Mission log file (mission.log)
+"""
+
 import cv2
 import serial
-import pynmea2
 import threading
-from detect import HumanDetector
+import logging
+import yaml
+import sys
+import os
+from datetime import datetime
+
+# Import local modules
+sys.path.insert(0, os.path.dirname(__file__))
+from detect import ONNXDetector, draw_detections
 from geolocation import get_real_coords
 from alert import send_alert
 
-# ── Settings ──────────────────────────────────────────────────────────────────
+# ── Setup Logging ─────────────────────────────────────────────────────────────
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[logging.FileHandler("mission.log"), logging.StreamHandler()]
+)
+log = logging.getLogger("SAR-NPU")
 
-MODEL_PATH = "models/best.pt"
-
-# DJI Air 3S camera — FOV derived from 84° diagonal, 16:9 sensor
-CAMERA = {
-    "fov_h":        76,
-    "fov_v":        49,
-    "image_width":  1920,
-    "image_height": 1080,
-}
-
-# Email alert — leave empty string to disable
-ALERT_EMAIL     = "rescue_team@example.com"
-SENDER_EMAIL    = "your_email@gmail.com"
-SENDER_PASSWORD = "your_app_password"   # Gmail App Password
-
-# GPS serial port — run: ls /dev/ttyTHS* to find yours
-GPS_PORT = "/dev/ttyTHS1"
-GPS_BAUD = 9600
-
-# ── Shared telemetry state ────────────────────────────────────────────────────
-# Updated continuously by the GPS thread while detection runs in main thread
-
-telemetry = {
-    "lat":      None,
-    "lon":      None,
-    "altitude": None,   # from $GPGGA — meters above sea level
-    "heading":  None,   # from $GPHDT or $GPVTG
-    "ready":    False,  # True once all four values are available
-}
-
-# ── GPS background thread ─────────────────────────────────────────────────────
-
-def read_telemetry(port, baud):
-    """
-    Runs in background. Reads NMEA sentences from flight controller
-    and updates shared telemetry dict in real time.
-
-    Sentences used:
-        $GPGGA — lat, lon, altitude
-        $GPHDT — heading (true north)
-        $GPVTG — heading fallback (course over ground)
-    """
+# ── Load Configuration ────────────────────────────────────────────────────────
+def load_config():
     try:
-        ser = serial.Serial(port, baud, timeout=1)
-        print(f"[GPS] Connected on {port}")
+        with open("config.yaml", "r") as f:
+            return yaml.safe_load(f)
     except Exception as e:
-        print(f"[GPS] Could not open {port}: {e}")
+        log.critical(f"Failed to load config.yaml: {e}")
+        sys.exit(1)
+
+cfg = load_config()
+
+# ── Global Telemetry State ────────────────────────────────────────────────────
+telemetry = {"lat": None, "lon": None, "alt": None, "hdg": 0.0, "ready": False}
+
+def gps_worker():
+    """Background thread to handle GPS serial data."""
+    import pynmea2
+    try:
+        ser = serial.Serial(cfg['gps']['port'], cfg['gps']['baud'], timeout=1)
+        log.info(f"GPS Serial connected: {cfg['gps']['port']}")
+    except Exception as e:
+        log.error(f"GPS connection failed: {e}. Running in simulation/offline mode.")
         return
 
     while True:
         try:
             line = ser.readline().decode("ascii", errors="replace").strip()
-
             if line.startswith("$GPGGA"):
                 msg = pynmea2.parse(line)
-                telemetry["lat"]      = msg.latitude
-                telemetry["lon"]      = msg.longitude
-                telemetry["altitude"] = float(msg.altitude)
-
+                if msg.latitude and msg.longitude:
+                    telemetry["lat"], telemetry["lon"] = msg.latitude, msg.longitude
+                    telemetry["alt"] = float(msg.altitude)
             elif line.startswith("$GPHDT"):
-                msg = pynmea2.parse(line)
-                telemetry["heading"] = float(msg.heading)
-
-            elif line.startswith("$GPVTG") and telemetry["heading"] is None:
-                msg = pynmea2.parse(line)
-                if msg.true_track:
-                    telemetry["heading"] = float(msg.true_track)
-
-            if all(v is not None for v in [
-                telemetry["lat"], telemetry["lon"],
-                telemetry["altitude"], telemetry["heading"]
-            ]):
+                telemetry["hdg"] = float(pynmea2.parse(line).heading)
+            
+            if all(telemetry[k] is not None for k in ["lat", "lon", "alt"]):
                 telemetry["ready"] = True
-
         except Exception:
-            pass
+            continue
 
-# ── Start GPS thread ──────────────────────────────────────────────────────────
+# ── Main Mission Loop ─────────────────────────────────────────────────────────
+def main():
+    # Start GPS Thread
+    threading.Thread(target=gps_worker, daemon=True).start()
 
-gps_thread = threading.Thread(
-    target=read_telemetry,
-    args=(GPS_PORT, GPS_BAUD),
-    daemon=True
-)
-gps_thread.start()
+    # Initialize Detector
+    detector = ONNXDetector(
+        model_path=cfg['model']['path'],
+        provider=cfg['model']['provider'],
+        conf_threshold=cfg['model']['threshold']
+    )
 
-# ── Camera (Jetson Nano CSI via GStreamer) ────────────────────────────────────
+    # Initialize Camera
+    cap = cv2.VideoCapture(cfg['camera']['source'])
+    if not cap.isOpened():
+        log.error("Could not open camera source.")
+        return
 
-gst_pipeline = (
-    "nvarguscamerasrc ! "
-    "video/x-raw(memory:NVMM), width=1920, height=1080, framerate=30/1 ! "
-    "nvvidconv ! video/x-raw, format=BGRx ! "
-    "videoconvert ! video/x-raw, format=BGR ! appsink"
-)
-cap = cv2.VideoCapture(gst_pipeline, cv2.CAP_GSTREAMER)
+    alert_sent = False
+    log.info("System Ready. Waiting for GPS fix...")
 
-# ── Run ───────────────────────────────────────────────────────────────────────
+    try:
+        while cap.isOpened():
+            ret, frame = cap.read()
+            if not ret: break
 
-detector   = HumanDetector(MODEL_PATH, conf_threshold=0.6)
-alert_sent = False
+            if not telemetry["ready"]:
+                # Optional: Show 'Wait' on frame if debugging
+                continue
 
-print("[INFO] Waiting for GPS fix...")
+            # 1. Inference
+            detections = detector.detect(frame)
 
-while cap.isOpened():
-    ret, frame = cap.read()
-    if not ret:
-        print("[Camera] Read failed")
-        break
+            # 2. Geolocation & Logic
+            if detections:
+                log.info(f"Detected {len(detections)} targets.")
+                
+                # Geolocate the most confident target
+                best_target = max(detections, key=lambda d: d['conf'])
+                est_lat, est_lon = get_real_coords(
+                    bbox_center=best_target["center"],
+                    drone_position=(telemetry["lat"], telemetry["lon"], telemetry["alt"]),
+                    drone_heading=telemetry["hdg"],
+                    camera_config=cfg['camera']
+                )
 
-    if not telemetry["ready"]:
-        print("[GPS] Waiting for fix...", end="\r")
-        continue
+                log.info(f"Target Est Location: {est_lat:.6f}, {est_lon:.6f}")
 
-    # Snapshot current telemetry
-    lat      = telemetry["lat"]
-    lon      = telemetry["lon"]
-    altitude = telemetry["altitude"]
-    heading  = telemetry["heading"]
+                # 3. Alerting
+                if cfg['email']['enabled'] and not alert_sent:
+                    annotated = draw_detections(frame, detections)
+                    success = send_alert(
+                        lat=est_lat, lon=est_lon, 
+                        person_count=len(detections),
+                        recipient_email=cfg['email']['recipient'],
+                        sender_email=cfg['email']['sender'],
+                        sender_password=cfg['email']['password'],
+                        frame=frame, 
+                        annotated_frame=annotated
+                    )
+                    if success:
+                        alert_sent = True
+                        log.info("Emergency Alert Sent.")
 
-    detections = detector.detect(frame)
-    annotated  = detector.draw(frame.copy(), detections)
+    except KeyboardInterrupt:
+        log.info("Mission interrupted by user.")
+    finally:
+        cap.release()
+        log.info("Mission ended. Resources released.")
 
-    if detections:
-        # Use detection with highest confidence for geolocation
-        best = max(detections, key=lambda d: d["conf"])
-        person_lat, person_lon = get_real_coords(
-            bbox_center    = best["center"],
-            drone_position = (lat, lon, altitude),
-            drone_heading  = heading,
-            camera_config  = CAMERA,
-        )
-        print(f"{len(detections)} person(s) | "
-              f"Drone: {lat:.4f},{lon:.4f} "
-              f"Alt:{altitude:.1f}m Head:{heading:.1f}° | "
-              f"Person at: {person_lat:.6f},{person_lon:.6f}")
-
-        if ALERT_EMAIL and not alert_sent:
-            send_alert(
-                lat             = person_lat,
-                lon             = person_lon,
-                person_count    = len(detections),
-                recipient_email = ALERT_EMAIL,
-                sender_email    = SENDER_EMAIL,
-                sender_password = SENDER_PASSWORD,
-                frame           = frame,
-                annotated_frame = annotated,
-            )
-            alert_sent = True
-
-    # No imshow on Jetson — no screen during flight
-    # Uncomment only when debugging with monitor plugged in:
-    # cv2.imshow("UAV Detection", annotated)
-    # if cv2.waitKey(1) & 0xFF == ord("q"): break
-
-cap.release()
+if __name__ == "__main__":
+    main()

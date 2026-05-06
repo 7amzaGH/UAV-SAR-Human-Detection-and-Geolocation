@@ -1,18 +1,18 @@
 """
 srt_reader.py
 -------------
-Reads DJI .SRT telemetry files and returns per-frame GPS data.
+Parses DJI .SRT telemetry files into per-frame GPS dictionaries.
 
-Real DJI Air 3S SRT format per subtitle block:
+DJI SRT format (Air 3S example):
     FrameCnt: 1, DiffTime: 33ms
     2024-06-10 11:35:37.000
     [iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
-    [latitude: 50.290200] [longtitude: 18.664700]     <- DJI misspells longitude
-    [rel_alt: 28.300 abs_alt: 312.412]                <- rel_alt = above ground (what we need)
+    [latitude: 50.2902] [longtitude: 18.6647]   ← DJI typo: "longtitude"
+    [rel_alt: 28.300 abs_alt: 312.412]
 
-IMPORTANT: DJI SRT does NOT store heading.
-We default heading to 0 (North). For accurate geolocation,
-check your DJI Fly app flight record or fly with Video Caption ON.
+Note: heading is NOT stored in DJI SRT files.
+      It defaults to 0.0 (North). For accurate geolocation provide
+      heading from your flight logs or a compass/IMU source.
 """
 
 import re
@@ -20,49 +20,51 @@ import re
 
 def load_srt(srt_path):
     """
-    Parse a DJI .SRT file and return a list of telemetry dicts, one per frame.
+    Parse a DJI .SRT file.
 
-    Each dict contains:
-        lat      — latitude in decimal degrees
-        lon      — longitude in decimal degrees
-        altitude — relative altitude above ground in meters (rel_alt)
-        heading  — always 0.0 (not stored in DJI SRT files)
+    Returns
+    -------
+    List of dicts with keys: lat, lon, altitude (rel_alt), heading (0.0).
+    Returns an empty list if no telemetry blocks are found.
     """
     with open(srt_path, "r", encoding="utf-8", errors="replace") as f:
         content = f.read()
 
-    telemetry = []
-
-    # Match latitude — standard spelling
-    # Match longitude — DJI misspells it as "longtitude" (extra t), handle both
-    # Match rel_alt — relative altitude above ground (more useful than abs_alt)
+    # Handles both "longitude" and DJI's misspelling "longtitude"
     pattern = re.compile(
         r"\[latitude\s*:\s*([\-\d.]+)\]"
         r".*?"
-        r"\[lon[g]?titude\s*:\s*([\-\d.]+)\]"   # matches both longitude and longtitude
+        r"\[lon[g]?titude\s*:\s*([\-\d.]+)\]"
         r".*?"
-        r"\[rel_alt\s*:\s*([\-\d.]+)",            # relative altitude above takeoff point
-        re.DOTALL
+        r"\[rel_alt\s*:\s*([\-\d.]+)",
+        re.DOTALL,
     )
 
-    for match in pattern.finditer(content):
-        telemetry.append({
-            "lat":      float(match.group(1)),
-            "lon":      float(match.group(2)),
-            "altitude": float(match.group(3)),
-            "heading":  0.0,    # not available in SRT — assumed North
-        })
+    telemetry = [
+        {
+            "lat":      float(m.group(1)),
+            "lon":      float(m.group(2)),
+            "altitude": float(m.group(3)),
+            "heading":  0.0,
+        }
+        for m in pattern.finditer(content)
+    ]
+
+    if not telemetry:
+        print(
+            "[srt_reader] WARNING: No telemetry found.\n"
+            "             Make sure 'Video Caption' is ON in DJI camera settings."
+        )
 
     return telemetry
 
 
 def get_frame_telemetry(telemetry, frame_id):
     """
-    Get telemetry for a specific frame index.
-    Clamps to last entry if frame_id exceeds SRT length.
-    Returns None if telemetry list is empty (SRT not found or wrong format).
+    Return telemetry for a given logical frame index.
+    Clamps to the last entry if frame_id exceeds the SRT length.
+    Returns None if telemetry is empty.
     """
     if not telemetry:
         return None
-    index = min(frame_id, len(telemetry) - 1)
-    return telemetry[index]
+    return telemetry[min(frame_id, len(telemetry) - 1)]

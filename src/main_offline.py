@@ -1,189 +1,171 @@
 """
 main_offline.py
 ---------------
-Offline UAV-SAR pipeline: processes a pre-recorded DJI video + SRT file,
-detects humans frame by frame, geolocates each detection, sends a one-time
-email alert on first detection, and saves all results to a CSV file.
+Offline UAV-SAR pipeline: process a pre-recorded DJI video + SRT telemetry file,
+detect persons frame by frame, geolocate each detection, send a one-time email
+alert on first detection, and save all results to CSV.
 
-Usage:
-    python src/main_offline.py
+Usage
+-----
+    python src/main_offline.py --config config.yaml
 
-Requirements:
-    - DJI video file (.MP4)
-    - DJI SRT telemetry file (.SRT) — same name as video, enable Video Caption
-      in DJI camera settings before recording
-    - YOLOv8 model weights (.pt)
+    # or override specific fields:
+    python src/main_offline.py --video path/to/video.MP4 --srt path/to/video.SRT
 
-Output:
-    - detections.csv  — all detections with bbox, estimated GPS, confidence
+Requirements
+------------
+    - DJI video (.MP4) recorded with 'Video Caption' enabled in the DJI app
+    - Matching .SRT telemetry file (same base name as video)
+    - YOLOv8 weights (.pt) in models/
+    - config.yaml filled in (copy from config.yaml.template)
 """
 
-import cv2
+import argparse
+import csv
 import os
 import sys
-import csv
+import cv2
+import yaml
 
+# Ensure local imports work
 sys.path.insert(0, os.path.dirname(__file__))
-
-from detect      import HumanDetector
-from geolocation import get_real_coords
 from alert       import send_alert
-from srt_reader  import load_srt, get_frame_telemetry
+from detect      import PTDetector as HumanDetector, draw_detections
+from geolocation import get_real_coords
+from srt_reader  import get_frame_telemetry, load_srt
 
-# ── Settings ──────────────────────────────────────────────────────────────────
-MODEL_PATH = "models/best.pt"
-VIDEO_PATH = "DJI_0001.MP4"
-SRT_PATH   = "DJI_0001.SRT"
-OUTPUT_CSV = "detections.csv"
+CSV_FIELDS = [
+    "frame_id", "drone_lat", "drone_lon", "altitude",
+    "person_idx", "bbox_x1", "bbox_y1", "bbox_x2", "bbox_y2",
+    "est_lat", "est_lon", "conf",
+]
 
-CAMERA = {
-    "fov_h":        76,    # horizontal field of view (degrees) — DJI Air 3S
-    "fov_v":        49,    # vertical field of view (degrees)
-    "image_width":  1920,  # original frame resolution
-    "image_height": 1080,
-    "fps":          30,    # target processing fps — set to match your recording
-                           # DJI Air 3S common values: 24, 30, 60
-                           # check actual fps printed at startup and adjust
-}
+def parse_args():
+    p = argparse.ArgumentParser(description="AlienSight offline pipeline")
+    p.add_argument("--config", default="config.yaml")
+    p.add_argument("--video",  default=None)
+    p.add_argument("--srt",    default=None)
+    p.add_argument("--output", default=None)
+    return p.parse_args()
 
-# Gimbal pitch — not stored in DJI SRT, set manually per flight
-# 0  = nadir (straight down)
-# 45 = oblique (45 degrees below horizon)
-GIMBAL_PITCH = 0
+def load_config(path):
+    if not os.path.exists(path):
+        print(f"[ERROR] Config file not found: {path}")
+        sys.exit(1)
+    with open(path) as f:
+        return yaml.safe_load(f)
 
-# Email alert — set ALERT_EMAIL to "" to disable
-ALERT_EMAIL     = "rescue_team@example.com"
-SENDER_EMAIL    = "your_email@gmail.com"
-SENDER_PASSWORD = "your_app_password"   # Gmail App Password, not account password
+def main():
+    args = parse_args()
+    cfg  = load_config(args.config)
 
-# ── Load Telemetry ─────────────────────────────────────────────────────────────
-telemetry = load_srt(SRT_PATH)
-if not telemetry:
-    print(f"[ERROR] No telemetry found in {SRT_PATH}")
-    print("        Make sure 'Video Caption' is ON in DJI camera settings.")
-    sys.exit(1)
+    # CLI Overrides
+    video_path  = args.video  or cfg["paths"]["video"]
+    srt_path    = args.srt    or cfg["paths"]["srt"]
+    output_csv  = args.output or cfg["paths"]["output_csv"]
+    model_path  = cfg["paths"]["model"]
+    camera      = cfg["camera"]
+    alert_cfg   = cfg.get("alert", {})
+    
+    # Correcting gimbal pitch for math (looking down is usually negative)
+    gimbal_pitch = cfg.get("gimbal_pitch", 0)
+    pitch_input  = 0 if gimbal_pitch == 0 else -abs(gimbal_pitch)
 
-print(f"[SRT]   Loaded {len(telemetry)} telemetry frames from {SRT_PATH}")
+    # 1. Load Telemetry
+    telemetry = load_srt(srt_path)
+    if not telemetry:
+        sys.exit(1)
 
-# ── Load Model ─────────────────────────────────────────────────────────────────
-detector    = HumanDetector(MODEL_PATH, conf_threshold=0.6)
-alert_sent  = False
-pitch_input = 0 if GIMBAL_PITCH == 0 else -GIMBAL_PITCH
-rows        = []
+    # 2. Load Detector (PTDetector for offline usually works best)
+    detector = HumanDetector(model_path, conf_threshold=cfg.get("conf_threshold", 0.6))
+    
+    # 3. Video Setup
+    cap = cv2.VideoCapture(video_path)
+    actual_fps = cap.get(cv2.CAP_PROP_FPS)
+    target_fps = camera.get("fps", 2) # Processing at 2fps is usually enough for offline
+    frame_skip = max(1, round(actual_fps / target_fps))
 
-# ── Video Setup ────────────────────────────────────────────────────────────────
-cap        = cv2.VideoCapture(VIDEO_PATH)
-actual_fps = cap.get(cv2.CAP_PROP_FPS)
-target_fps = CAMERA["fps"]
-frame_skip = max(1, round(actual_fps / target_fps))
+    print(f"[System] Processing {video_path} at {target_fps} FPS...")
 
-print(f"[Video] Actual FPS: {actual_fps:.1f} | "
-      f"Target FPS: {target_fps} | "
-      f"Processing every {frame_skip} frame(s)")
+    frame_id = 0
+    processed_count = 0
+    alert_sent = False
+    rows = []
 
-# ── Main Loop ──────────────────────────────────────────────────────────────────
-frame_id     = 0   # raw frame counter from video
-processed_id = 0   # logical frame index after skip
+    try:
+        while cap.isOpened():
+            ret, frame = cap.read()
+            if not ret: break
 
-while cap.isOpened():
-    ret, frame_orig = cap.read()
-    if not ret:
-        break
+            if frame_id % frame_skip != 0:
+                frame_id += 1
+                continue
 
-    # Skip frames to match target fps
-    if frame_id % frame_skip != 0:
-        frame_id += 1
-        continue
+            # Get telemetry for the current timestamp
+            telem = get_frame_telemetry(telemetry, frame_id / actual_fps) 
+            if telem is None: break
 
-    telem = get_frame_telemetry(telemetry, processed_id)
-    if telem is None:
-        break
+            # Inference (Let the detector handle internal resizing)
+            detections = detector.detect(frame)
 
-    drone_pos = (telem["lat"], telem["lon"], telem["altitude"])
+            if detections:
+                print(f"  Frame {frame_id} | Found {len(detections)} person(s)")
+                
+                for i, det in enumerate(detections):
+                    est_lat, est_lon = get_real_coords(
+                        bbox_center    = det["center"],
+                        drone_position = (telem["lat"], telem["lon"], telem["altitude"]),
+                        drone_heading  = telem["heading"],
+                        camera_config  = camera
+                    )
 
-    # Resize to 960×960 for YOLO inference, scale bbox back to original resolution
-    frame_yolo = cv2.resize(frame_orig, (960, 960))
-    detections = detector.detect(frame_yolo)
+                    rows.append({
+                        "frame_id"  : frame_id,
+                        "drone_lat" : telem["lat"],
+                        "drone_lon" : telem["lon"],
+                        "altitude"  : telem["altitude"],
+                        "person_idx": i + 1,
+                        "bbox_x1"   : det["bbox"][0],
+                        "bbox_y1"   : det["bbox"][1],
+                        "bbox_x2"   : det["bbox"][2],
+                        "bbox_y2"   : det["bbox"][3],
+                        "est_lat"   : round(est_lat, 6),
+                        "est_lon"   : round(est_lon, 6),
+                        "conf"      : det["conf"],
+                    })
 
-    scale_x = frame_orig.shape[1] / 960
-    scale_y = frame_orig.shape[0] / 960
-    for det in detections:
-        x1, y1, x2, y2 = det["bbox"]
-        det["bbox"]   = (int(x1 * scale_x), int(y1 * scale_y),
-                         int(x2 * scale_x), int(y2 * scale_y))
-        det["center"] = (int((x1 + x2) / 2 * scale_x),
-                         int((y1 + y2) / 2 * scale_y))
+                # Alerting Logic
+                if alert_cfg.get("enabled") and not alert_sent:
+                    annotated = draw_detections(frame, detections)
+                    send_alert(
+                        lat=est_lat, lon=est_lon, 
+                        person_count=len(detections),
+                        recipient_email=alert_cfg["recipient"],
+                        sender_email=alert_cfg["sender"],
+                        sender_password=alert_cfg["password"],
+                        frame=frame, 
+                        annotated_frame=annotated
+                    )
+                    alert_sent = True
 
-    if detections:
-        print(f"Frame {processed_id:04d} | "
-              f"Drone: {telem['lat']:.6f}, {telem['lon']:.6f} | "
-              f"Alt: {telem['altitude']:.1f} m | "
-              f"{len(detections)} person(s)")
+            frame_id += 1
+            processed_count += 1
 
-        for i, det in enumerate(detections):
-            est_lat, est_lon = get_real_coords(
-                bbox_center    = det["center"],
-                drone_position = drone_pos,
-                drone_heading  = telem["heading"],
-                gimbal_pitch   = pitch_input,
-                camera_config  = CAMERA,
-            )
-            print(f"  └─ Person {i+1} (conf {det['conf']:.2f}) → "
-                  f"Est: {est_lat:.6f}, {est_lon:.6f}")
+    except KeyboardInterrupt:
+        print("\n[Stop] Interrupted by user.")
+    finally:
+        cap.release()
 
-            rows.append({
-                "frame_id"  : processed_id,
-                "drone_lat" : telem["lat"],
-                "drone_lon" : telem["lon"],
-                "altitude"  : telem["altitude"],
-                "person_idx": i + 1,
-                "bbox_x1"   : det["bbox"][0],
-                "bbox_y1"   : det["bbox"][1],
-                "bbox_x2"   : det["bbox"][2],
-                "bbox_y2"   : det["bbox"][3],
-                "est_lat"   : round(est_lat, 6),
-                "est_lon"   : round(est_lon, 6),
-                "conf"      : det["conf"],
-            })
+    # 4. Save Results
+    if rows:
+        os.makedirs(os.path.dirname(output_csv) or ".", exist_ok=True)
+        with open(output_csv, "w", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
+            writer.writeheader()
+            writer.writerows(rows)
+        print(f"[Done] {len(rows)} detections saved to {output_csv}")
+    else:
+        print("[Done] No detections found.")
 
-        # Send one email on first detection with annotated frame attached
-        if ALERT_EMAIL and not alert_sent:
-            best = max(detections, key=lambda d: d["conf"])
-            est_lat, est_lon = get_real_coords(
-                bbox_center    = best["center"],
-                drone_position = drone_pos,
-                drone_heading  = telem["heading"],
-                gimbal_pitch   = pitch_input,
-                camera_config  = CAMERA,
-            )
-            success = send_alert(
-                lat             = est_lat,
-                lon             = est_lon,
-                person_count    = len(detections),
-                recipient_email = ALERT_EMAIL,
-                sender_email    = SENDER_EMAIL,
-                sender_password = SENDER_PASSWORD,
-                frame           = frame_orig,
-                annotated_frame = detector.draw(frame_orig, detections),
-            )
-            if success:
-                alert_sent = True
-
-    frame_id     += 1
-    processed_id += 1
-
-cap.release()
-
-# ── Save CSV ───────────────────────────────────────────────────────────────────
-with open(OUTPUT_CSV, "w", newline="") as f:
-    fieldnames = ["frame_id", "drone_lat", "drone_lon", "altitude",
-                  "person_idx", "bbox_x1", "bbox_y1", "bbox_x2", "bbox_y2",
-                  "est_lat", "est_lon", "conf"]
-    writer = csv.DictWriter(f, fieldnames=fieldnames)
-    writer.writeheader()
-    writer.writerows(rows)
-
-print(f"\n[Done] Processed {processed_id} frames at {target_fps} fps")
-print(f"[Done] {len(rows)} detections saved → {OUTPUT_CSV}")
-if not alert_sent and ALERT_EMAIL:
-    print("[Done] No persons detected — no alert sent")
+if __name__ == "__main__":
+    main()

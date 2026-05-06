@@ -13,6 +13,6 @@ conf_threshold: 0.7
 gimbal_pitch: 0
 paths:
   model: /content/best.pt
-  output_csv: /content/detections3.csv
-  srt: /content/45d15m_Flight_Data.srt
-  video: /content/resized_drone_clip3.mp4
+  output_csv: /data/detections.csv
+  srt: /data/Demo_15m90d_Data.srt
+  video: /data/15m90d.mp4

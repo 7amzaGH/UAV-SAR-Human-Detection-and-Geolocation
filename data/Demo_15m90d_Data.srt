@@ -1,0 +1,3600 @@
+1
+00:00:00,000 --> 00:00:00,033
+FrameCnt: 1, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+2
+00:00:00,033 --> 00:00:00,066
+FrameCnt: 2, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+3
+00:00:00,066 --> 00:00:00,099
+FrameCnt: 3, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+4
+00:00:00,099 --> 00:00:00,132
+FrameCnt: 4, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+5
+00:00:00,132 --> 00:00:00,165
+FrameCnt: 5, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+6
+00:00:00,165 --> 00:00:00,198
+FrameCnt: 6, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+7
+00:00:00,198 --> 00:00:00,231
+FrameCnt: 7, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+8
+00:00:00,231 --> 00:00:00,264
+FrameCnt: 8, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+9
+00:00:00,264 --> 00:00:00,297
+FrameCnt: 9, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+10
+00:00:00,297 --> 00:00:00,330
+FrameCnt: 10, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+11
+00:00:00,330 --> 00:00:00,363
+FrameCnt: 11, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+12
+00:00:00,363 --> 00:00:00,396
+FrameCnt: 12, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+13
+00:00:00,396 --> 00:00:00,429
+FrameCnt: 13, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+14
+00:00:00,429 --> 00:00:00,462
+FrameCnt: 14, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+15
+00:00:00,462 --> 00:00:00,495
+FrameCnt: 15, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+16
+00:00:00,495 --> 00:00:00,528
+FrameCnt: 16, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+17
+00:00:00,528 --> 00:00:00,561
+FrameCnt: 17, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+18
+00:00:00,561 --> 00:00:00,594
+FrameCnt: 18, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+19
+00:00:00,594 --> 00:00:00,627
+FrameCnt: 19, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+20
+00:00:00,627 --> 00:00:00,660
+FrameCnt: 20, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+21
+00:00:00,660 --> 00:00:00,693
+FrameCnt: 21, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+22
+00:00:00,693 --> 00:00:00,726
+FrameCnt: 22, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+23
+00:00:00,726 --> 00:00:00,759
+FrameCnt: 23, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+24
+00:00:00,759 --> 00:00:00,792
+FrameCnt: 24, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+25
+00:00:00,792 --> 00:00:00,825
+FrameCnt: 25, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+26
+00:00:00,825 --> 00:00:00,858
+FrameCnt: 26, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+27
+00:00:00,858 --> 00:00:00,891
+FrameCnt: 27, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+28
+00:00:00,891 --> 00:00:00,924
+FrameCnt: 28, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+29
+00:00:00,924 --> 00:00:00,957
+FrameCnt: 29, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+30
+00:00:00,957 --> 00:00:00,990
+FrameCnt: 30, DiffTime: 33ms
+2025-05-24 14:30:44.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673287] [drone_heading: 332.51]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+31
+00:00:01,000 --> 00:00:01,033
+FrameCnt: 31, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+32
+00:00:01,033 --> 00:00:01,066
+FrameCnt: 32, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+33
+00:00:01,066 --> 00:00:01,099
+FrameCnt: 33, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+34
+00:00:01,099 --> 00:00:01,132
+FrameCnt: 34, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+35
+00:00:01,132 --> 00:00:01,165
+FrameCnt: 35, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+36
+00:00:01,165 --> 00:00:01,198
+FrameCnt: 36, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+37
+00:00:01,198 --> 00:00:01,231
+FrameCnt: 37, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+38
+00:00:01,231 --> 00:00:01,264
+FrameCnt: 38, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+39
+00:00:01,264 --> 00:00:01,297
+FrameCnt: 39, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+40
+00:00:01,297 --> 00:00:01,330
+FrameCnt: 40, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+41
+00:00:01,330 --> 00:00:01,363
+FrameCnt: 41, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+42
+00:00:01,363 --> 00:00:01,396
+FrameCnt: 42, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+43
+00:00:01,396 --> 00:00:01,429
+FrameCnt: 43, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+44
+00:00:01,429 --> 00:00:01,462
+FrameCnt: 44, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+45
+00:00:01,462 --> 00:00:01,495
+FrameCnt: 45, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+46
+00:00:01,495 --> 00:00:01,528
+FrameCnt: 46, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+47
+00:00:01,528 --> 00:00:01,561
+FrameCnt: 47, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+48
+00:00:01,561 --> 00:00:01,594
+FrameCnt: 48, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+49
+00:00:01,594 --> 00:00:01,627
+FrameCnt: 49, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+50
+00:00:01,627 --> 00:00:01,660
+FrameCnt: 50, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+51
+00:00:01,660 --> 00:00:01,693
+FrameCnt: 51, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+52
+00:00:01,693 --> 00:00:01,726
+FrameCnt: 52, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+53
+00:00:01,726 --> 00:00:01,759
+FrameCnt: 53, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+54
+00:00:01,759 --> 00:00:01,792
+FrameCnt: 54, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+55
+00:00:01,792 --> 00:00:01,825
+FrameCnt: 55, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+56
+00:00:01,825 --> 00:00:01,858
+FrameCnt: 56, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+57
+00:00:01,858 --> 00:00:01,891
+FrameCnt: 57, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+58
+00:00:01,891 --> 00:00:01,924
+FrameCnt: 58, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+59
+00:00:01,924 --> 00:00:01,957
+FrameCnt: 59, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+60
+00:00:01,957 --> 00:00:01,990
+FrameCnt: 60, DiffTime: 33ms
+2025-05-24 14:30:45.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294239] [longtitude: 18.673289] [drone_heading: 335.78]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+61
+00:00:02,000 --> 00:00:02,033
+FrameCnt: 61, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+62
+00:00:02,033 --> 00:00:02,066
+FrameCnt: 62, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+63
+00:00:02,066 --> 00:00:02,099
+FrameCnt: 63, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+64
+00:00:02,099 --> 00:00:02,132
+FrameCnt: 64, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+65
+00:00:02,132 --> 00:00:02,165
+FrameCnt: 65, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+66
+00:00:02,165 --> 00:00:02,198
+FrameCnt: 66, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+67
+00:00:02,198 --> 00:00:02,231
+FrameCnt: 67, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+68
+00:00:02,231 --> 00:00:02,264
+FrameCnt: 68, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+69
+00:00:02,264 --> 00:00:02,297
+FrameCnt: 69, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+70
+00:00:02,297 --> 00:00:02,330
+FrameCnt: 70, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+71
+00:00:02,330 --> 00:00:02,363
+FrameCnt: 71, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+72
+00:00:02,363 --> 00:00:02,396
+FrameCnt: 72, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+73
+00:00:02,396 --> 00:00:02,429
+FrameCnt: 73, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+74
+00:00:02,429 --> 00:00:02,462
+FrameCnt: 74, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+75
+00:00:02,462 --> 00:00:02,495
+FrameCnt: 75, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+76
+00:00:02,495 --> 00:00:02,528
+FrameCnt: 76, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+77
+00:00:02,528 --> 00:00:02,561
+FrameCnt: 77, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+78
+00:00:02,561 --> 00:00:02,594
+FrameCnt: 78, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+79
+00:00:02,594 --> 00:00:02,627
+FrameCnt: 79, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+80
+00:00:02,627 --> 00:00:02,660
+FrameCnt: 80, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+81
+00:00:02,660 --> 00:00:02,693
+FrameCnt: 81, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+82
+00:00:02,693 --> 00:00:02,726
+FrameCnt: 82, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+83
+00:00:02,726 --> 00:00:02,759
+FrameCnt: 83, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+84
+00:00:02,759 --> 00:00:02,792
+FrameCnt: 84, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+85
+00:00:02,792 --> 00:00:02,825
+FrameCnt: 85, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+86
+00:00:02,825 --> 00:00:02,858
+FrameCnt: 86, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+87
+00:00:02,858 --> 00:00:02,891
+FrameCnt: 87, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+88
+00:00:02,891 --> 00:00:02,924
+FrameCnt: 88, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+89
+00:00:02,924 --> 00:00:02,957
+FrameCnt: 89, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+90
+00:00:02,957 --> 00:00:02,990
+FrameCnt: 90, DiffTime: 33ms
+2025-05-24 14:30:46.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294238] [longtitude: 18.673285] [drone_heading: 336.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+91
+00:00:03,000 --> 00:00:03,033
+FrameCnt: 91, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+92
+00:00:03,033 --> 00:00:03,066
+FrameCnt: 92, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+93
+00:00:03,066 --> 00:00:03,099
+FrameCnt: 93, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+94
+00:00:03,099 --> 00:00:03,132
+FrameCnt: 94, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+95
+00:00:03,132 --> 00:00:03,165
+FrameCnt: 95, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+96
+00:00:03,165 --> 00:00:03,198
+FrameCnt: 96, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+97
+00:00:03,198 --> 00:00:03,231
+FrameCnt: 97, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+98
+00:00:03,231 --> 00:00:03,264
+FrameCnt: 98, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+99
+00:00:03,264 --> 00:00:03,297
+FrameCnt: 99, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+100
+00:00:03,297 --> 00:00:03,330
+FrameCnt: 100, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+101
+00:00:03,330 --> 00:00:03,363
+FrameCnt: 101, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+102
+00:00:03,363 --> 00:00:03,396
+FrameCnt: 102, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+103
+00:00:03,396 --> 00:00:03,429
+FrameCnt: 103, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+104
+00:00:03,429 --> 00:00:03,462
+FrameCnt: 104, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+105
+00:00:03,462 --> 00:00:03,495
+FrameCnt: 105, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+106
+00:00:03,495 --> 00:00:03,528
+FrameCnt: 106, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+107
+00:00:03,528 --> 00:00:03,561
+FrameCnt: 107, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+108
+00:00:03,561 --> 00:00:03,594
+FrameCnt: 108, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+109
+00:00:03,594 --> 00:00:03,627
+FrameCnt: 109, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+110
+00:00:03,627 --> 00:00:03,660
+FrameCnt: 110, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+111
+00:00:03,660 --> 00:00:03,693
+FrameCnt: 111, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+112
+00:00:03,693 --> 00:00:03,726
+FrameCnt: 112, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+113
+00:00:03,726 --> 00:00:03,759
+FrameCnt: 113, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+114
+00:00:03,759 --> 00:00:03,792
+FrameCnt: 114, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+115
+00:00:03,792 --> 00:00:03,825
+FrameCnt: 115, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+116
+00:00:03,825 --> 00:00:03,858
+FrameCnt: 116, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+117
+00:00:03,858 --> 00:00:03,891
+FrameCnt: 117, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+118
+00:00:03,891 --> 00:00:03,924
+FrameCnt: 118, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+119
+00:00:03,924 --> 00:00:03,957
+FrameCnt: 119, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+120
+00:00:03,957 --> 00:00:03,990
+FrameCnt: 120, DiffTime: 33ms
+2025-05-24 14:30:47.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294240] [longtitude: 18.673292] [drone_heading: 338.04]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+121
+00:00:04,000 --> 00:00:04,033
+FrameCnt: 121, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+122
+00:00:04,033 --> 00:00:04,066
+FrameCnt: 122, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+123
+00:00:04,066 --> 00:00:04,099
+FrameCnt: 123, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+124
+00:00:04,099 --> 00:00:04,132
+FrameCnt: 124, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+125
+00:00:04,132 --> 00:00:04,165
+FrameCnt: 125, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+126
+00:00:04,165 --> 00:00:04,198
+FrameCnt: 126, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+127
+00:00:04,198 --> 00:00:04,231
+FrameCnt: 127, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+128
+00:00:04,231 --> 00:00:04,264
+FrameCnt: 128, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+129
+00:00:04,264 --> 00:00:04,297
+FrameCnt: 129, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+130
+00:00:04,297 --> 00:00:04,330
+FrameCnt: 130, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+131
+00:00:04,330 --> 00:00:04,363
+FrameCnt: 131, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+132
+00:00:04,363 --> 00:00:04,396
+FrameCnt: 132, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+133
+00:00:04,396 --> 00:00:04,429
+FrameCnt: 133, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+134
+00:00:04,429 --> 00:00:04,462
+FrameCnt: 134, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+135
+00:00:04,462 --> 00:00:04,495
+FrameCnt: 135, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+136
+00:00:04,495 --> 00:00:04,528
+FrameCnt: 136, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+137
+00:00:04,528 --> 00:00:04,561
+FrameCnt: 137, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+138
+00:00:04,561 --> 00:00:04,594
+FrameCnt: 138, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+139
+00:00:04,594 --> 00:00:04,627
+FrameCnt: 139, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+140
+00:00:04,627 --> 00:00:04,660
+FrameCnt: 140, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+141
+00:00:04,660 --> 00:00:04,693
+FrameCnt: 141, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+142
+00:00:04,693 --> 00:00:04,726
+FrameCnt: 142, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+143
+00:00:04,726 --> 00:00:04,759
+FrameCnt: 143, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+144
+00:00:04,759 --> 00:00:04,792
+FrameCnt: 144, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+145
+00:00:04,792 --> 00:00:04,825
+FrameCnt: 145, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+146
+00:00:04,825 --> 00:00:04,858
+FrameCnt: 146, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+147
+00:00:04,858 --> 00:00:04,891
+FrameCnt: 147, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+148
+00:00:04,891 --> 00:00:04,924
+FrameCnt: 148, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+149
+00:00:04,924 --> 00:00:04,957
+FrameCnt: 149, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+150
+00:00:04,957 --> 00:00:04,990
+FrameCnt: 150, DiffTime: 33ms
+2025-05-24 14:30:48.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294241] [longtitude: 18.673294] [drone_heading: 340.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+151
+00:00:05,000 --> 00:00:05,033
+FrameCnt: 151, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+152
+00:00:05,033 --> 00:00:05,066
+FrameCnt: 152, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+153
+00:00:05,066 --> 00:00:05,099
+FrameCnt: 153, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+154
+00:00:05,099 --> 00:00:05,132
+FrameCnt: 154, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+155
+00:00:05,132 --> 00:00:05,165
+FrameCnt: 155, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+156
+00:00:05,165 --> 00:00:05,198
+FrameCnt: 156, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+157
+00:00:05,198 --> 00:00:05,231
+FrameCnt: 157, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+158
+00:00:05,231 --> 00:00:05,264
+FrameCnt: 158, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+159
+00:00:05,264 --> 00:00:05,297
+FrameCnt: 159, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+160
+00:00:05,297 --> 00:00:05,330
+FrameCnt: 160, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+161
+00:00:05,330 --> 00:00:05,363
+FrameCnt: 161, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+162
+00:00:05,363 --> 00:00:05,396
+FrameCnt: 162, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+163
+00:00:05,396 --> 00:00:05,429
+FrameCnt: 163, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+164
+00:00:05,429 --> 00:00:05,462
+FrameCnt: 164, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+165
+00:00:05,462 --> 00:00:05,495
+FrameCnt: 165, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+166
+00:00:05,495 --> 00:00:05,528
+FrameCnt: 166, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+167
+00:00:05,528 --> 00:00:05,561
+FrameCnt: 167, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+168
+00:00:05,561 --> 00:00:05,594
+FrameCnt: 168, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+169
+00:00:05,594 --> 00:00:05,627
+FrameCnt: 169, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+170
+00:00:05,627 --> 00:00:05,660
+FrameCnt: 170, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+171
+00:00:05,660 --> 00:00:05,693
+FrameCnt: 171, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+172
+00:00:05,693 --> 00:00:05,726
+FrameCnt: 172, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+173
+00:00:05,726 --> 00:00:05,759
+FrameCnt: 173, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+174
+00:00:05,759 --> 00:00:05,792
+FrameCnt: 174, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+175
+00:00:05,792 --> 00:00:05,825
+FrameCnt: 175, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+176
+00:00:05,825 --> 00:00:05,858
+FrameCnt: 176, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+177
+00:00:05,858 --> 00:00:05,891
+FrameCnt: 177, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+178
+00:00:05,891 --> 00:00:05,924
+FrameCnt: 178, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+179
+00:00:05,924 --> 00:00:05,957
+FrameCnt: 179, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+180
+00:00:05,957 --> 00:00:05,990
+FrameCnt: 180, DiffTime: 33ms
+2025-05-24 14:30:49.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294265] [longtitude: 18.673292] [drone_heading: 83.91]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+181
+00:00:06,000 --> 00:00:06,033
+FrameCnt: 181, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+182
+00:00:06,033 --> 00:00:06,066
+FrameCnt: 182, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+183
+00:00:06,066 --> 00:00:06,099
+FrameCnt: 183, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+184
+00:00:06,099 --> 00:00:06,132
+FrameCnt: 184, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+185
+00:00:06,132 --> 00:00:06,165
+FrameCnt: 185, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+186
+00:00:06,165 --> 00:00:06,198
+FrameCnt: 186, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+187
+00:00:06,198 --> 00:00:06,231
+FrameCnt: 187, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+188
+00:00:06,231 --> 00:00:06,264
+FrameCnt: 188, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+189
+00:00:06,264 --> 00:00:06,297
+FrameCnt: 189, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+190
+00:00:06,297 --> 00:00:06,330
+FrameCnt: 190, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+191
+00:00:06,330 --> 00:00:06,363
+FrameCnt: 191, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+192
+00:00:06,363 --> 00:00:06,396
+FrameCnt: 192, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+193
+00:00:06,396 --> 00:00:06,429
+FrameCnt: 193, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+194
+00:00:06,429 --> 00:00:06,462
+FrameCnt: 194, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+195
+00:00:06,462 --> 00:00:06,495
+FrameCnt: 195, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+196
+00:00:06,495 --> 00:00:06,528
+FrameCnt: 196, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+197
+00:00:06,528 --> 00:00:06,561
+FrameCnt: 197, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+198
+00:00:06,561 --> 00:00:06,594
+FrameCnt: 198, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+199
+00:00:06,594 --> 00:00:06,627
+FrameCnt: 199, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+200
+00:00:06,627 --> 00:00:06,660
+FrameCnt: 200, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+201
+00:00:06,660 --> 00:00:06,693
+FrameCnt: 201, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+202
+00:00:06,693 --> 00:00:06,726
+FrameCnt: 202, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+203
+00:00:06,726 --> 00:00:06,759
+FrameCnt: 203, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+204
+00:00:06,759 --> 00:00:06,792
+FrameCnt: 204, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+205
+00:00:06,792 --> 00:00:06,825
+FrameCnt: 205, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+206
+00:00:06,825 --> 00:00:06,858
+FrameCnt: 206, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+207
+00:00:06,858 --> 00:00:06,891
+FrameCnt: 207, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+208
+00:00:06,891 --> 00:00:06,924
+FrameCnt: 208, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+209
+00:00:06,924 --> 00:00:06,957
+FrameCnt: 209, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+210
+00:00:06,957 --> 00:00:06,990
+FrameCnt: 210, DiffTime: 33ms
+2025-05-24 14:30:50.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294297] [longtitude: 18.673281] [drone_heading: 168.32]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+211
+00:00:07,000 --> 00:00:07,033
+FrameCnt: 211, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+212
+00:00:07,033 --> 00:00:07,066
+FrameCnt: 212, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+213
+00:00:07,066 --> 00:00:07,099
+FrameCnt: 213, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+214
+00:00:07,099 --> 00:00:07,132
+FrameCnt: 214, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+215
+00:00:07,132 --> 00:00:07,165
+FrameCnt: 215, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+216
+00:00:07,165 --> 00:00:07,198
+FrameCnt: 216, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+217
+00:00:07,198 --> 00:00:07,231
+FrameCnt: 217, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+218
+00:00:07,231 --> 00:00:07,264
+FrameCnt: 218, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+219
+00:00:07,264 --> 00:00:07,297
+FrameCnt: 219, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+220
+00:00:07,297 --> 00:00:07,330
+FrameCnt: 220, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+221
+00:00:07,330 --> 00:00:07,363
+FrameCnt: 221, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+222
+00:00:07,363 --> 00:00:07,396
+FrameCnt: 222, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+223
+00:00:07,396 --> 00:00:07,429
+FrameCnt: 223, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+224
+00:00:07,429 --> 00:00:07,462
+FrameCnt: 224, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+225
+00:00:07,462 --> 00:00:07,495
+FrameCnt: 225, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+226
+00:00:07,495 --> 00:00:07,528
+FrameCnt: 226, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+227
+00:00:07,528 --> 00:00:07,561
+FrameCnt: 227, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+228
+00:00:07,561 --> 00:00:07,594
+FrameCnt: 228, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+229
+00:00:07,594 --> 00:00:07,627
+FrameCnt: 229, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+230
+00:00:07,627 --> 00:00:07,660
+FrameCnt: 230, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+231
+00:00:07,660 --> 00:00:07,693
+FrameCnt: 231, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+232
+00:00:07,693 --> 00:00:07,726
+FrameCnt: 232, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+233
+00:00:07,726 --> 00:00:07,759
+FrameCnt: 233, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+234
+00:00:07,759 --> 00:00:07,792
+FrameCnt: 234, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+235
+00:00:07,792 --> 00:00:07,825
+FrameCnt: 235, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+236
+00:00:07,825 --> 00:00:07,858
+FrameCnt: 236, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+237
+00:00:07,858 --> 00:00:07,891
+FrameCnt: 237, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+238
+00:00:07,891 --> 00:00:07,924
+FrameCnt: 238, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+239
+00:00:07,924 --> 00:00:07,957
+FrameCnt: 239, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+240
+00:00:07,957 --> 00:00:07,990
+FrameCnt: 240, DiffTime: 33ms
+2025-05-24 14:30:51.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294305] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+241
+00:00:08,000 --> 00:00:08,033
+FrameCnt: 241, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+242
+00:00:08,033 --> 00:00:08,066
+FrameCnt: 242, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+243
+00:00:08,066 --> 00:00:08,099
+FrameCnt: 243, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+244
+00:00:08,099 --> 00:00:08,132
+FrameCnt: 244, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+245
+00:00:08,132 --> 00:00:08,165
+FrameCnt: 245, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+246
+00:00:08,165 --> 00:00:08,198
+FrameCnt: 246, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+247
+00:00:08,198 --> 00:00:08,231
+FrameCnt: 247, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+248
+00:00:08,231 --> 00:00:08,264
+FrameCnt: 248, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+249
+00:00:08,264 --> 00:00:08,297
+FrameCnt: 249, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+250
+00:00:08,297 --> 00:00:08,330
+FrameCnt: 250, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+251
+00:00:08,330 --> 00:00:08,363
+FrameCnt: 251, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+252
+00:00:08,363 --> 00:00:08,396
+FrameCnt: 252, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+253
+00:00:08,396 --> 00:00:08,429
+FrameCnt: 253, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+254
+00:00:08,429 --> 00:00:08,462
+FrameCnt: 254, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+255
+00:00:08,462 --> 00:00:08,495
+FrameCnt: 255, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+256
+00:00:08,495 --> 00:00:08,528
+FrameCnt: 256, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+257
+00:00:08,528 --> 00:00:08,561
+FrameCnt: 257, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+258
+00:00:08,561 --> 00:00:08,594
+FrameCnt: 258, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+259
+00:00:08,594 --> 00:00:08,627
+FrameCnt: 259, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+260
+00:00:08,627 --> 00:00:08,660
+FrameCnt: 260, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+261
+00:00:08,660 --> 00:00:08,693
+FrameCnt: 261, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+262
+00:00:08,693 --> 00:00:08,726
+FrameCnt: 262, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+263
+00:00:08,726 --> 00:00:08,759
+FrameCnt: 263, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+264
+00:00:08,759 --> 00:00:08,792
+FrameCnt: 264, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+265
+00:00:08,792 --> 00:00:08,825
+FrameCnt: 265, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+266
+00:00:08,825 --> 00:00:08,858
+FrameCnt: 266, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+267
+00:00:08,858 --> 00:00:08,891
+FrameCnt: 267, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+268
+00:00:08,891 --> 00:00:08,924
+FrameCnt: 268, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+269
+00:00:08,924 --> 00:00:08,957
+FrameCnt: 269, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+270
+00:00:08,957 --> 00:00:08,990
+FrameCnt: 270, DiffTime: 33ms
+2025-05-24 14:30:52.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294311] [longtitude: 18.673259] [drone_heading: 162.65]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+271
+00:00:09,000 --> 00:00:09,033
+FrameCnt: 271, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+272
+00:00:09,033 --> 00:00:09,066
+FrameCnt: 272, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+273
+00:00:09,066 --> 00:00:09,099
+FrameCnt: 273, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+274
+00:00:09,099 --> 00:00:09,132
+FrameCnt: 274, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+275
+00:00:09,132 --> 00:00:09,165
+FrameCnt: 275, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+276
+00:00:09,165 --> 00:00:09,198
+FrameCnt: 276, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+277
+00:00:09,198 --> 00:00:09,231
+FrameCnt: 277, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+278
+00:00:09,231 --> 00:00:09,264
+FrameCnt: 278, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+279
+00:00:09,264 --> 00:00:09,297
+FrameCnt: 279, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+280
+00:00:09,297 --> 00:00:09,330
+FrameCnt: 280, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+281
+00:00:09,330 --> 00:00:09,363
+FrameCnt: 281, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+282
+00:00:09,363 --> 00:00:09,396
+FrameCnt: 282, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+283
+00:00:09,396 --> 00:00:09,429
+FrameCnt: 283, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+284
+00:00:09,429 --> 00:00:09,462
+FrameCnt: 284, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+285
+00:00:09,462 --> 00:00:09,495
+FrameCnt: 285, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+286
+00:00:09,495 --> 00:00:09,528
+FrameCnt: 286, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+287
+00:00:09,528 --> 00:00:09,561
+FrameCnt: 287, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+288
+00:00:09,561 --> 00:00:09,594
+FrameCnt: 288, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+289
+00:00:09,594 --> 00:00:09,627
+FrameCnt: 289, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+290
+00:00:09,627 --> 00:00:09,660
+FrameCnt: 290, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+291
+00:00:09,660 --> 00:00:09,693
+FrameCnt: 291, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+292
+00:00:09,693 --> 00:00:09,726
+FrameCnt: 292, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+293
+00:00:09,726 --> 00:00:09,759
+FrameCnt: 293, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+294
+00:00:09,759 --> 00:00:09,792
+FrameCnt: 294, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+295
+00:00:09,792 --> 00:00:09,825
+FrameCnt: 295, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+296
+00:00:09,825 --> 00:00:09,858
+FrameCnt: 296, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+297
+00:00:09,858 --> 00:00:09,891
+FrameCnt: 297, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+298
+00:00:09,891 --> 00:00:09,924
+FrameCnt: 298, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+299
+00:00:09,924 --> 00:00:09,957
+FrameCnt: 299, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+300
+00:00:09,957 --> 00:00:09,990
+FrameCnt: 300, DiffTime: 33ms
+2025-05-24 14:30:53.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294317] [longtitude: 18.673274] [drone_heading: 180.00]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+301
+00:00:10,000 --> 00:00:10,033
+FrameCnt: 301, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+302
+00:00:10,033 --> 00:00:10,066
+FrameCnt: 302, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+303
+00:00:10,066 --> 00:00:10,099
+FrameCnt: 303, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+304
+00:00:10,099 --> 00:00:10,132
+FrameCnt: 304, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+305
+00:00:10,132 --> 00:00:10,165
+FrameCnt: 305, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+306
+00:00:10,165 --> 00:00:10,198
+FrameCnt: 306, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+307
+00:00:10,198 --> 00:00:10,231
+FrameCnt: 307, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+308
+00:00:10,231 --> 00:00:10,264
+FrameCnt: 308, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+309
+00:00:10,264 --> 00:00:10,297
+FrameCnt: 309, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+310
+00:00:10,297 --> 00:00:10,330
+FrameCnt: 310, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+311
+00:00:10,330 --> 00:00:10,363
+FrameCnt: 311, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+312
+00:00:10,363 --> 00:00:10,396
+FrameCnt: 312, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+313
+00:00:10,396 --> 00:00:10,429
+FrameCnt: 313, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+314
+00:00:10,429 --> 00:00:10,462
+FrameCnt: 314, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+315
+00:00:10,462 --> 00:00:10,495
+FrameCnt: 315, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+316
+00:00:10,495 --> 00:00:10,528
+FrameCnt: 316, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+317
+00:00:10,528 --> 00:00:10,561
+FrameCnt: 317, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+318
+00:00:10,561 --> 00:00:10,594
+FrameCnt: 318, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+319
+00:00:10,594 --> 00:00:10,627
+FrameCnt: 319, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+320
+00:00:10,627 --> 00:00:10,660
+FrameCnt: 320, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+321
+00:00:10,660 --> 00:00:10,693
+FrameCnt: 321, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+322
+00:00:10,693 --> 00:00:10,726
+FrameCnt: 322, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+323
+00:00:10,726 --> 00:00:10,759
+FrameCnt: 323, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+324
+00:00:10,759 --> 00:00:10,792
+FrameCnt: 324, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+325
+00:00:10,792 --> 00:00:10,825
+FrameCnt: 325, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+326
+00:00:10,825 --> 00:00:10,858
+FrameCnt: 326, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+327
+00:00:10,858 --> 00:00:10,891
+FrameCnt: 327, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+328
+00:00:10,891 --> 00:00:10,924
+FrameCnt: 328, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+329
+00:00:10,924 --> 00:00:10,957
+FrameCnt: 329, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+330
+00:00:10,957 --> 00:00:10,990
+FrameCnt: 330, DiffTime: 33ms
+2025-05-24 14:30:54.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294315] [longtitude: 18.673231] [drone_heading: 226.74]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+331
+00:00:11,000 --> 00:00:11,033
+FrameCnt: 331, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+332
+00:00:11,033 --> 00:00:11,066
+FrameCnt: 332, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+333
+00:00:11,066 --> 00:00:11,099
+FrameCnt: 333, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+334
+00:00:11,099 --> 00:00:11,132
+FrameCnt: 334, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+335
+00:00:11,132 --> 00:00:11,165
+FrameCnt: 335, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+336
+00:00:11,165 --> 00:00:11,198
+FrameCnt: 336, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+337
+00:00:11,198 --> 00:00:11,231
+FrameCnt: 337, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+338
+00:00:11,231 --> 00:00:11,264
+FrameCnt: 338, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+339
+00:00:11,264 --> 00:00:11,297
+FrameCnt: 339, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+340
+00:00:11,297 --> 00:00:11,330
+FrameCnt: 340, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+341
+00:00:11,330 --> 00:00:11,363
+FrameCnt: 341, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+342
+00:00:11,363 --> 00:00:11,396
+FrameCnt: 342, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+343
+00:00:11,396 --> 00:00:11,429
+FrameCnt: 343, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+344
+00:00:11,429 --> 00:00:11,462
+FrameCnt: 344, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+345
+00:00:11,462 --> 00:00:11,495
+FrameCnt: 345, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+346
+00:00:11,495 --> 00:00:11,528
+FrameCnt: 346, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+347
+00:00:11,528 --> 00:00:11,561
+FrameCnt: 347, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+348
+00:00:11,561 --> 00:00:11,594
+FrameCnt: 348, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+349
+00:00:11,594 --> 00:00:11,627
+FrameCnt: 349, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+350
+00:00:11,627 --> 00:00:11,660
+FrameCnt: 350, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+351
+00:00:11,660 --> 00:00:11,693
+FrameCnt: 351, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+352
+00:00:11,693 --> 00:00:11,726
+FrameCnt: 352, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+353
+00:00:11,726 --> 00:00:11,759
+FrameCnt: 353, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+354
+00:00:11,759 --> 00:00:11,792
+FrameCnt: 354, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+355
+00:00:11,792 --> 00:00:11,825
+FrameCnt: 355, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+356
+00:00:11,825 --> 00:00:11,858
+FrameCnt: 356, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+357
+00:00:11,858 --> 00:00:11,891
+FrameCnt: 357, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+358
+00:00:11,891 --> 00:00:11,924
+FrameCnt: 358, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+359
+00:00:11,924 --> 00:00:11,957
+FrameCnt: 359, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+360
+00:00:11,957 --> 00:00:11,990
+FrameCnt: 360, DiffTime: 33ms
+2025-05-24 14:30:55.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673221] [drone_heading: 236.56]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+361
+00:00:12,000 --> 00:00:12,033
+FrameCnt: 361, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+362
+00:00:12,033 --> 00:00:12,066
+FrameCnt: 362, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+363
+00:00:12,066 --> 00:00:12,099
+FrameCnt: 363, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+364
+00:00:12,099 --> 00:00:12,132
+FrameCnt: 364, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+365
+00:00:12,132 --> 00:00:12,165
+FrameCnt: 365, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+366
+00:00:12,165 --> 00:00:12,198
+FrameCnt: 366, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+367
+00:00:12,198 --> 00:00:12,231
+FrameCnt: 367, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+368
+00:00:12,231 --> 00:00:12,264
+FrameCnt: 368, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+369
+00:00:12,264 --> 00:00:12,297
+FrameCnt: 369, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+370
+00:00:12,297 --> 00:00:12,330
+FrameCnt: 370, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+371
+00:00:12,330 --> 00:00:12,363
+FrameCnt: 371, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+372
+00:00:12,363 --> 00:00:12,396
+FrameCnt: 372, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+373
+00:00:12,396 --> 00:00:12,429
+FrameCnt: 373, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+374
+00:00:12,429 --> 00:00:12,462
+FrameCnt: 374, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+375
+00:00:12,462 --> 00:00:12,495
+FrameCnt: 375, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+376
+00:00:12,495 --> 00:00:12,528
+FrameCnt: 376, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+377
+00:00:12,528 --> 00:00:12,561
+FrameCnt: 377, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+378
+00:00:12,561 --> 00:00:12,594
+FrameCnt: 378, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+379
+00:00:12,594 --> 00:00:12,627
+FrameCnt: 379, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+380
+00:00:12,627 --> 00:00:12,660
+FrameCnt: 380, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+381
+00:00:12,660 --> 00:00:12,693
+FrameCnt: 381, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+382
+00:00:12,693 --> 00:00:12,726
+FrameCnt: 382, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+383
+00:00:12,726 --> 00:00:12,759
+FrameCnt: 383, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+384
+00:00:12,759 --> 00:00:12,792
+FrameCnt: 384, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+385
+00:00:12,792 --> 00:00:12,825
+FrameCnt: 385, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+386
+00:00:12,825 --> 00:00:12,858
+FrameCnt: 386, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+387
+00:00:12,858 --> 00:00:12,891
+FrameCnt: 387, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+388
+00:00:12,891 --> 00:00:12,924
+FrameCnt: 388, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+389
+00:00:12,924 --> 00:00:12,957
+FrameCnt: 389, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+390
+00:00:12,957 --> 00:00:12,990
+FrameCnt: 390, DiffTime: 33ms
+2025-05-24 14:30:56.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294289] [longtitude: 18.673212] [drone_heading: 245.21]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+391
+00:00:13,000 --> 00:00:13,033
+FrameCnt: 391, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+392
+00:00:13,033 --> 00:00:13,066
+FrameCnt: 392, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+393
+00:00:13,066 --> 00:00:13,099
+FrameCnt: 393, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+394
+00:00:13,099 --> 00:00:13,132
+FrameCnt: 394, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+395
+00:00:13,132 --> 00:00:13,165
+FrameCnt: 395, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+396
+00:00:13,165 --> 00:00:13,198
+FrameCnt: 396, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+397
+00:00:13,198 --> 00:00:13,231
+FrameCnt: 397, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+398
+00:00:13,231 --> 00:00:13,264
+FrameCnt: 398, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+399
+00:00:13,264 --> 00:00:13,297
+FrameCnt: 399, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+400
+00:00:13,297 --> 00:00:13,330
+FrameCnt: 400, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+401
+00:00:13,330 --> 00:00:13,363
+FrameCnt: 401, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+402
+00:00:13,363 --> 00:00:13,396
+FrameCnt: 402, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+403
+00:00:13,396 --> 00:00:13,429
+FrameCnt: 403, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+404
+00:00:13,429 --> 00:00:13,462
+FrameCnt: 404, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+405
+00:00:13,462 --> 00:00:13,495
+FrameCnt: 405, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+406
+00:00:13,495 --> 00:00:13,528
+FrameCnt: 406, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+407
+00:00:13,528 --> 00:00:13,561
+FrameCnt: 407, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+408
+00:00:13,561 --> 00:00:13,594
+FrameCnt: 408, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+409
+00:00:13,594 --> 00:00:13,627
+FrameCnt: 409, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+410
+00:00:13,627 --> 00:00:13,660
+FrameCnt: 410, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+411
+00:00:13,660 --> 00:00:13,693
+FrameCnt: 411, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+412
+00:00:13,693 --> 00:00:13,726
+FrameCnt: 412, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+413
+00:00:13,726 --> 00:00:13,759
+FrameCnt: 413, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+414
+00:00:13,759 --> 00:00:13,792
+FrameCnt: 414, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+415
+00:00:13,792 --> 00:00:13,825
+FrameCnt: 415, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+416
+00:00:13,825 --> 00:00:13,858
+FrameCnt: 416, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+417
+00:00:13,858 --> 00:00:13,891
+FrameCnt: 417, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+418
+00:00:13,891 --> 00:00:13,924
+FrameCnt: 418, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+419
+00:00:13,924 --> 00:00:13,957
+FrameCnt: 419, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+420
+00:00:13,957 --> 00:00:13,990
+FrameCnt: 420, DiffTime: 33ms
+2025-05-24 14:30:57.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294301] [longtitude: 18.673204] [drone_heading: 241.12]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+421
+00:00:14,000 --> 00:00:14,033
+FrameCnt: 421, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+422
+00:00:14,033 --> 00:00:14,066
+FrameCnt: 422, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+423
+00:00:14,066 --> 00:00:14,099
+FrameCnt: 423, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+424
+00:00:14,099 --> 00:00:14,132
+FrameCnt: 424, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+425
+00:00:14,132 --> 00:00:14,165
+FrameCnt: 425, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+426
+00:00:14,165 --> 00:00:14,198
+FrameCnt: 426, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+427
+00:00:14,198 --> 00:00:14,231
+FrameCnt: 427, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+428
+00:00:14,231 --> 00:00:14,264
+FrameCnt: 428, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+429
+00:00:14,264 --> 00:00:14,297
+FrameCnt: 429, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+430
+00:00:14,297 --> 00:00:14,330
+FrameCnt: 430, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+431
+00:00:14,330 --> 00:00:14,363
+FrameCnt: 431, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+432
+00:00:14,363 --> 00:00:14,396
+FrameCnt: 432, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+433
+00:00:14,396 --> 00:00:14,429
+FrameCnt: 433, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+434
+00:00:14,429 --> 00:00:14,462
+FrameCnt: 434, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+435
+00:00:14,462 --> 00:00:14,495
+FrameCnt: 435, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+436
+00:00:14,495 --> 00:00:14,528
+FrameCnt: 436, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+437
+00:00:14,528 --> 00:00:14,561
+FrameCnt: 437, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+438
+00:00:14,561 --> 00:00:14,594
+FrameCnt: 438, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+439
+00:00:14,594 --> 00:00:14,627
+FrameCnt: 439, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+440
+00:00:14,627 --> 00:00:14,660
+FrameCnt: 440, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+441
+00:00:14,660 --> 00:00:14,693
+FrameCnt: 441, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+442
+00:00:14,693 --> 00:00:14,726
+FrameCnt: 442, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+443
+00:00:14,726 --> 00:00:14,759
+FrameCnt: 443, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+444
+00:00:14,759 --> 00:00:14,792
+FrameCnt: 444, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+445
+00:00:14,792 --> 00:00:14,825
+FrameCnt: 445, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+446
+00:00:14,825 --> 00:00:14,858
+FrameCnt: 446, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+447
+00:00:14,858 --> 00:00:14,891
+FrameCnt: 447, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+448
+00:00:14,891 --> 00:00:14,924
+FrameCnt: 448, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+449
+00:00:14,924 --> 00:00:14,957
+FrameCnt: 449, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+
+450
+00:00:14,957 --> 00:00:14,990
+FrameCnt: 450, DiffTime: 33ms
+2025-05-24 14:30:58.000
+[iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
+[latitude: 50.294313] [longtitude: 18.673199] [drone_heading: 236.41]
+[rel_alt: 15.000 abs_alt: 299.112]
+

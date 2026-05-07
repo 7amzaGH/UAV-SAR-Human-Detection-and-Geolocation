@@ -98,7 +98,7 @@ def main():
     target_fps = camera.get("fps", 2)
     frame_skip = max(1, round(actual_fps / target_fps))
 
-    print(f"[Video] {actual_fps:.0f} fps actual → processing every {frame_skip} frame(s) "
+    print(f"[Video] {actual_fps:.0f} fps actual -> processing every {frame_skip} frame(s) "
           f"({actual_fps / frame_skip:.0f} fps effective)")
 
     # ── Main loop ─────────────────────────────────────────────────────────────
@@ -117,7 +117,7 @@ def main():
             raw_frame_id += 1
             continue
 
-        # Map processed-frame index → SRT entry (1 SRT entry per second of video)
+        # Map processed-frame index -> SRT entry (1 SRT entry per second of video)
         telem = get_frame_telemetry(telemetry, proc_frame_id)
         if telem is None:
             break
@@ -143,7 +143,7 @@ def main():
                     camera_config  = camera,
                 )
                 print(f"    └─ Person {i+1} (conf {det['conf']:.2f}) "
-                      f"→ {est_lat:.6f}, {est_lon:.6f}")
+                      f"-> {est_lat:.6f}, {est_lon:.6f}")
 
                 rows.append({
                     "frame_id"  : proc_frame_id,
@@ -194,7 +194,7 @@ def main():
         writer.writerows(rows)
 
     print(f"\n[Done] {proc_frame_id} frames processed")
-    print(f"[Done] {len(rows)} detections → {output_csv}")
+    print(f"[Done] {len(rows)} detections -> {output_csv}")
     if not alert_sent and alert_cfg.get("enabled"):
         print("[Done] No persons detected — no alert sent")
 

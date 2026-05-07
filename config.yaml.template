@@ -1,8 +1,8 @@
 alert:
   enabled: true
-  password: jssc diax jxyy sqpm
-  recipient: hamza.ghitri.edu@gmail.com
-  sender: 7hamza46@gmail.com
+  password: "xxxx xxxx xxxx xxxx"
+  recipient: "your_email@gmail.com"
+  sender: "your_sender@gmail.com"
 camera:
   fov_h: 76
   fov_v: 49

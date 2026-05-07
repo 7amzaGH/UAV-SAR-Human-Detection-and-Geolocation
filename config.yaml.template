@@ -12,7 +12,7 @@ camera:
 conf_threshold: 0.7
 gimbal_pitch: 0
 paths:
-  model: /content/best.pt
+  model: /models/best.pt
   output_csv: /data/detections.csv
   srt: /data/Demo_15m90d_Data.srt
   video: /data/15m90d.mp4

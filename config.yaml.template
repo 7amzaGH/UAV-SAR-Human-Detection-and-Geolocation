@@ -1,8 +1,8 @@
 alert:
-  enabled: false
-  recipient: "your_email@gmail.com"
-  sender: "demo_bot@gmail.com"
-  password: "your_app_password"
+  enabled: true
+  password: jssc diax jxyy sqpm
+  recipient: hamza.ghitri.edu@gmail.com
+  sender: 7hamza46@gmail.com
 camera:
   fov_h: 76
   fov_v: 49
@@ -12,7 +12,7 @@ camera:
 conf_threshold: 0.7
 gimbal_pitch: 0
 paths:
-  model: /models/best.pt
-  output_csv: /data/detections.csv
-  srt: /data/Demo_15m90d_Data.srt
-  video: /data/15m90d.mp4
+  model: models/best.pt
+  output_csv: data/detections.csv
+  srt: data/Demo_15m90d_Data.srt
+  video: data/15m90d.mp4

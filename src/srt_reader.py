@@ -1,13 +1,13 @@
 """
 srt_reader.py
 -------------
-Parses DJI .SRT telemetry files into per-frame GPS dictionaries.
+Parses .SRT telemetry files into per-frame GPS dictionaries.
 
-DJI SRT format (Air 3S example):
+SRT format (Air 3S example):
     FrameCnt: 1, DiffTime: 33ms
     2024-06-10 11:35:37.000
     [iso: 100] [shutter: 1/500.0] [fnum: 280] [ev: 0]
-    [latitude: 50.2902] [longtitude: 18.6647]   ← DJI typo: "longtitude"
+    [latitude: 50.2902] [longtitude: 18.6647]
     [rel_alt: 28.300 abs_alt: 312.412]
 
 Note: heading is NOT stored in DJI SRT files.

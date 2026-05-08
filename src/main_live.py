@@ -124,6 +124,7 @@ def main():
                     bbox_center=best_target["center"],
                     drone_position=(telemetry["lat"], telemetry["lon"], telemetry["alt"]),
                     drone_heading=telemetry["hdg"],
+                    gimbal_pitch   = pitch_input,
                     camera_config=cfg['camera']
                 )
 
@@ -137,8 +138,7 @@ def main():
                         person_count=len(detections),
                         recipient_email=cfg['email']['recipient'],
                         sender_email=cfg['email']['sender'],
-                        sender_password=cfg['email']['password'],
-                        frame=frame, 
+                        sender_password=cfg['email']['password'], 
                         annotated_frame=annotated
                     )
                     if success:

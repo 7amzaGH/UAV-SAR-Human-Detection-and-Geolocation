@@ -3,19 +3,12 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Model weights (too large for GitHub — upload via Releases)
 models/*.pt
-
-# Credentials — NEVER commit these
+models/*.onnx
 config.yaml
 
-# Videos and large test files
-*.mp4
-*.MP4
-*.SRT
 
 # Output folders
-outputs/
 logs/
 
 # OS
